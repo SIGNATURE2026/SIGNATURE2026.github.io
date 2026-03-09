@@ -1,52 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signature Moving & Crating Canada</title>
+    <title>Signature Moving & Crating | Industrial Specialist</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
-        .lang { text-align: right; margin-bottom: 20px; }
-        h1 { color: #2c3e50; text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
-        .services { background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 5px solid #2c3e50; }
-        .contact { margin-top: 40px; text-align: center; font-weight: bold; padding: 20px; background: #2c3e50; color: white; border-radius: 8px; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; }
+        .lang { background: #333; color: white; text-align: right; padding: 5px 20px; font-size: 0.8em; }
+        .header { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .hero { text-align: center; margin-bottom: 40px; }
+        .hero h2 { color: #d9534f; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #eee; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .trust-box { background: #f4f4f4; padding: 20px; border-left: 5px solid #d9534f; margin: 30px 0; }
+        .cta { background: #d9534f; color: white; text-align: center; padding: 30px; border-radius: 8px; margin-top: 40px; }
         .en { display: none; }
     </style>
 </head>
 <body>
 
 <div class="lang">
-    <button onclick="show('fr')">FR</button> | <button onclick="show('en')">EN</button>
+    <button onclick="show('fr')" style="background:none; border:none; color:white; cursor:pointer;">FR</button> | 
+    <button onclick="show('en')" style="background:none; border:none; color:white; cursor:pointer;">EN</button>
+</div>
+
+<div class="header">
+    <h1>Signature Moving & Crating Canada</h1>
+    <p>Precision Industrial Handling & Crating</p>
 </div>
 
 <div id="fr">
-    <h1>Signature Moving & Crating Canada</h1>
-    <p style="text-align: center;">Spécialistes en manutention industrielle, équipements lourds et caissage sur mesure.</p>
-    <div class="services">
-        <h2>Nos Services</h2>
-        <ul>
-            <li>Manutention industrielle : Machinerie lourde.</li>
-            <li>Caissage (Crating) : Caisses en bois sur mesure.</li>
-            <li>Transport spécialisé : Pianos, coffres-forts.</li>
-        </ul>
+    <div class="container">
+        <div class="hero">
+            <h2>La référence en manutention industrielle à Ottawa/Gatineau</h2>
+            <p>Plus qu'un simple déménagement, nous protégeons vos équipements de haute valeur avec une rigueur absolue.</p>
+        </div>
+        <div class="services-grid">
+            <div class="card"><h3>Machinerie Lourde</h3><p>Relocalisation sécurisée et méthodique.</p></div>
+            <div class="card"><h3>Caissage sur mesure</h3><p>Protection certifiée pour vos actifs fragiles.</p></div>
+            <div class="card"><h3>Objets de Valeur</h3><p>Pianos, coffres-forts, équipement tech.</p></div>
+            <div class="card"><h3>Logistique</h3><p>Solutions sur mesure pour projets complexes.</p></div>
+        </div>
+        <div class="trust-box">
+            <h3>Pourquoi nous choisir ?</h3>
+            <p>Une approche directe et transparente. Pas de sous-traitance, pas de surprises. Un travail exécuté par des professionnels qui connaissent la valeur de vos équipements.</p>
+        </div>
     </div>
 </div>
 
 <div id="en" class="en">
-    <h1>Signature Moving & Crating Canada</h1>
-    <p style="text-align: center;">Specialists in industrial handling, heavy equipment, and custom crating.</p>
-    <div class="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Industrial Moving: Heavy machinery relocation.</li>
-            <li>Custom Crating: Precision wooden boxes.</li>
-            <li>Specialized Transport: Pianos, safes, and high-value items.</li>
-        </ul>
+    <div class="container">
+        <div class="hero">
+            <h2>The Ottawa/Gatineau Standard in Industrial Handling</h2>
+            <p>More than just moving, we protect your high-value equipment with absolute precision.</p>
+        </div>
+        <div class="services-grid">
+            <div class="card"><h3>Heavy Machinery</h3><p>Secure and methodical relocation.</p></div>
+            <div class="card"><h3>Custom Crating</h3><p>Certified protection for fragile assets.</p></div>
+            <div class="card"><h3>High-Value Items</h3><p>Pianos, safes, high-tech equipment.</p></div>
+            <div class="card"><h3>Logistics</h3><p>Tailored solutions for complex projects.</p></div>
+        </div>
+        <div class="trust-box">
+            <h3>Why Choose Us?</h3>
+            <p>A direct and transparent approach. No subcontractors, no surprises. Work performed by professionals who understand the value of your equipment.</p>
+        </div>
     </div>
 </div>
 
-<div class="contact">
-    <p>Contact : 613-859-3343 | info@signaturemovingcrating.ca</p>
+<div class="cta">
+    <h2>Besoin d'une estimation ? | Get a free estimate?</h2>
+    <p>613-859-3343 | info@signaturemovingcrating.ca</p>
 </div>
 
 <script>
