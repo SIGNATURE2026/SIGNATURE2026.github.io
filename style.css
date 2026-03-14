@@ -1,16 +1,10 @@
-/* style.css */
 :root {
-    --primary: #002D58;
-    --secondary: #E67E22;
-    --light: #F8F9FA;
-    --dark: #1A1A1A;
+    --primary: #002D58; --secondary: #E67E22; --light: #F8F9FA; --dark: #1A1A1A;
 }
-body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; line-height: 1.6; }
-
-/* Navigation commune */
-nav { background: var(--primary); padding: 20px; text-align: center; }
-nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; text-transform: uppercase; }
+body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
+nav { background: var(--primary); padding: 20px; text-align: center; border-bottom: 4px solid var(--secondary); }
+nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; text-transform: uppercase; }
 nav a:hover { color: var(--secondary); }
-
-/* Footer commun */
-footer { background: var(--dark); color: #bbb; text-align: center; padding: 40px; margin-top: 50px; }
+.content { max-width: 900px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+footer { background: var(--dark); color: #bbb; text-align: center; padding: 30px; margin-top: 50px; }
+h1 { color: var(--primary); }
