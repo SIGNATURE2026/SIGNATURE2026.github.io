@@ -1,0 +1,16 @@
+/* style.css */
+:root {
+    --primary: #002D58;
+    --secondary: #E67E22;
+    --light: #F8F9FA;
+    --dark: #1A1A1A;
+}
+body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; line-height: 1.6; }
+
+/* Navigation commune */
+nav { background: var(--primary); padding: 20px; text-align: center; }
+nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; text-transform: uppercase; }
+nav a:hover { color: var(--secondary); }
+
+/* Footer commun */
+footer { background: var(--dark); color: #bbb; text-align: center; padding: 40px; margin-top: 50px; }
