@@ -2,43 +2,66 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Signature Moving & Crating | Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Moving & Crating | Déménagement Industriel Ottawa</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; }
-        header { background: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .logo img { height: 60px; }
-        nav a { margin-left: 20px; text-decoration: none; color: #333; font-weight: bold; }
-        .hero { padding: 100px 20px; background: #002D58; color: white; text-align: center; }
-        .btn { background: #ff7a00; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
-        footer { background: #000; color: white; text-align: center; padding: 20px; }
+        :root { --primary: #002d58; --accent: #ff7a00; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; color: #333; }
+        
+        /* Navigation Pro */
+        nav { background: white; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--primary); position: sticky; top: 0; z-index: 1000; }
+        .logo img { height: 70px; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--primary); font-weight: bold; text-transform: uppercase; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,45,88,0.8), rgba(0,45,88,0.8)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d'); background-size: cover; padding: 100px 20px; text-align: center; color: white; }
+        .hero h1 { font-size: 3em; margin-bottom: 10px; }
+        .hero .btn { background: var(--accent); color: white; padding: 15px 40px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 20px; }
+        
+        /* Services Grid */
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 50px; max-width: 1200px; margin: auto; }
+        .service-card { border: 1px solid #ddd; padding: 20px; transition: 0.3s; }
+        .service-card:hover { border-color: var(--accent); }
+        
+        footer { background: var(--primary); color: white; padding: 40px; text-align: center; }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="machinery.html">Machinerie</a>
-            <a href="crating.html">Caissage</a>
-            <a href="transport.html">Transport</a>
-            <a href="#quote">Devis</a>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>Expertise Industrielle à Ottawa</h1>
-        <p>Logistique, déménagement et caissage sur mesure.</p>
-        <a href="#quote" class="btn">Demander un Devis</a>
-    </section>
-    <div class="container" id="quote">
-        <h2>Demande de Soumission</h2>
-        <form action="https://formspree.io/f/mgonojqp" method="POST">
-            <input type="text" name="name" placeholder="Nom Complet" required style="width:100%; padding:10px; margin-bottom:10px;">
-            <input type="email" name="email" placeholder="Votre Email" required style="width:100%; padding:10px; margin-bottom:10px;">
-            <textarea name="message" placeholder="Détails du projet" rows="5" style="width:100%; padding:10px;"></textarea>
-            <button type="submit" style="background:#ff7a00; color:white; border:none; padding:15px; width:100%; cursor:pointer;">Envoyer</button>
-        </form>
+
+<nav>
+    <div class="logo"><img src="1772619062185.png" alt="Signature Logo"></div>
+    <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="machinery.html">Machinerie</a>
+        <a href="crating.html">Caissage</a>
+        <a href="transport.html">Transport</a>
+        <a href="#devis" style="color: var(--accent);">DEMANDER UN DEVIS</a>
     </div>
-    <footer>© 2026 Signature Moving & Crating Canada</footer>
+</nav>
+
+<section class="hero">
+    <h1>Experts en Déménagement Industriel à Ottawa</h1>
+    <p>Solutions de logistique lourde, caissage sur mesure et transport spécialisé.</p>
+    <a href="#devis" class="btn">OBTENIR UNE SOUMISSION GRATUITE</a>
+</section>
+
+<div class="services">
+    <div class="service-card"><h3>Machinerie</h3><p>Relocalisation de haute précision.</p><a href="machinery.html">En savoir plus</a></div>
+    <div class="service-card"><h3>Caissage</h3><p>Protection NIMF-15 pour export.</p><a href="crating.html">En savoir plus</a></div>
+    <div class="service-card"><h3>Transport</h3><p>Sécurité totale, suspension pneumatique.</p><a href="transport.html">En savoir plus</a></div>
+</div>
+
+<section id="devis" style="padding:50px; background:#f9f9f9; text-align:center;">
+    <h2>Formulaire de Soumission</h2>
+    <form action="https://formspree.io/f/mgonojqp" method="POST" style="max-width:500px; margin:auto;">
+        <input type="text" name="nom" placeholder="Nom complet" required style="width:100%; padding:10px; margin:5px 0;">
+        <input type="email" name="email" placeholder="Email" required style="width:100%; padding:10px; margin:5px 0;">
+        <textarea name="message" placeholder="Détails du projet" rows="4" style="width:100%; padding:10px; margin:5px 0;"></textarea>
+        <button type="submit" style="width:100%; padding:15px; background:var(--primary); color:white; border:none; cursor:pointer;">ENVOYER</button>
+    </form>
+</section>
+
+<footer>© 2026 Signature Moving & Crating Canada | Ottawa & Gatineau</footer>
+
 </body>
 </html>
