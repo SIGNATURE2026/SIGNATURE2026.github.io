@@ -1,58 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signature | Logistique Industrielle</title>
-    <style>
-        body, html { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; scroll-behavior: smooth; }
-        section { height: 100vh; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background-size: cover; background-position: center; background-blend-mode: multiply; background-color: rgba(0, 0, 0, 0.4); padding: 50px 0; }
-        
-        nav { width: 100%; display: flex; justify-content: space-between; padding: 30px 50px; position: fixed; z-index: 10; }
-        nav .logo { color: white; font-weight: bold; font-size: 1.5em; letter-spacing: 2px; }
-        nav a { color: white; text-decoration: none; font-weight: 500; font-size: 0.8em; text-transform: uppercase; margin-left: 20px; }
-
-        .content { text-align: center; margin-top: 25vh; color: white; }
-        h1 { font-size: 3.5em; margin: 0; }
-        
-        .btn { padding: 15px 40px; border-radius: 50px; text-transform: uppercase; font-size: 0.8em; font-weight: bold; cursor: pointer; border: 1px solid white; background: transparent; color: white; transition: 0.3s; }
-        .btn:hover { background: white; color: black; }
-        
-        #devis { background: #fff; justify-content: center; }
-        input, textarea { width: 100%; padding: 15px; margin-bottom: 10px; border: none; border-bottom: 2px solid #000; background: transparent; }
-    </style>
-</head>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signature | Logistique</title>
+<style>
+    body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background: #000; color: #fff; }
+    nav { position: fixed; width: 100%; display: flex; justify-content: space-between; padding: 20px 50px; z-index: 100; box-sizing: border-box; }
+    .nav-links a { color: #fff; text-decoration: none; margin-left: 20px; text-transform: uppercase; font-size: 0.8em; font-weight: bold; }
+    section { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background-size: cover; background-position: center; }
+    h1 { font-size: 3em; margin-bottom: 10px; }
+    .btn { padding: 12px 40px; border: 2px solid #fff; color: #fff; text-decoration: none; border-radius: 50px; text-transform: uppercase; font-weight: bold; font-size: 0.8em; }
+    @media (max-width: 600px) { nav { flex-direction: column; text-align: center; gap: 10px; } }
+</style></head>
 <body>
-
-<nav>
-    <div class="logo">SIGNATURE</div>
-    <div><a href="#machinery">Machinerie</a><a href="#crating">Caissage</a><a href="#transport">Transport</a><a href="#devis">Devis</a></div>
-</nav>
-
-<section id="machinery" style="background-image: url('machinery.jpg');">
-    <div class="content"><h1>Machinerie</h1><p>Précision industrielle & relocalisation lourde.</p></div>
-    <a href="#devis" class="btn">Obtenir un tarif</a>
+<nav><div class="logo">SIGNATURE</div><div class="nav-links"><a href="machinery.html">Machinerie</a><a href="crating.html">Caissage</a><a href="transport.html">Transport</a></div></nav>
+<section style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1581092160607-ee22532079d0');">
+    <h1>Logistique Ottawa</h1><p>Relocalisation & Protection de haute précision.</p>
+    <br><a href="#devis" class="btn">Soumission</a>
 </section>
-
-<section id="crating" style="background-image: url('crating.jpg');">
-    <div class="content"><h1>Caissage</h1><p>Sur mesure : Industriel & Résidentiel.</p></div>
-    <a href="#devis" class="btn">Obtenir un tarif</a>
-</section>
-
-<section id="transport" style="background-image: url('transport.jpg');">
-    <div class="content"><h1>Transport</h1><p>Sécurité totale, haute valeur ajoutée.</p></div>
-    <a href="#devis" class="btn">Obtenir un tarif</a>
-</section>
-
-<section id="devis">
-    <h2 style="font-size: 2em; margin-bottom: 30px;">Demander une soumission</h2>
-    <form action="https://formspree.io/f/mgonojqp" method="POST" style="width: 300px;">
-        <input type="text" name="nom" placeholder="Nom complet" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Détails du projet" rows="4"></textarea>
-        <button type="submit" class="btn" style="border:1px solid #000; color:#000; margin-top:20px;">Envoyer</button>
-    </form>
-</section>
-
-</body>
-</html>
+</body></html>
