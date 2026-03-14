@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Signature Moving & Crating | Accueil</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; }
+        header { background: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo img { height: 60px; }
+        nav a { margin-left: 20px; text-decoration: none; color: #333; font-weight: bold; }
+        .hero { padding: 100px 20px; background: #002D58; color: white; text-align: center; }
+        .btn { background: #ff7a00; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
+        footer { background: #000; color: white; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="machinery.html">Machinerie</a>
+            <a href="crating.html">Caissage</a>
+            <a href="transport.html">Transport</a>
+            <a href="#quote">Devis</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Expertise Industrielle à Ottawa</h1>
+        <p>Logistique, déménagement et caissage sur mesure.</p>
+        <a href="#quote" class="btn">Demander un Devis</a>
+    </section>
+    <div class="container" id="quote">
+        <h2>Demande de Soumission</h2>
+        <form action="https://formspree.io/f/mgonojqp" method="POST">
+            <input type="text" name="name" placeholder="Nom Complet" required style="width:100%; padding:10px; margin-bottom:10px;">
+            <input type="email" name="email" placeholder="Votre Email" required style="width:100%; padding:10px; margin-bottom:10px;">
+            <textarea name="message" placeholder="Détails du projet" rows="5" style="width:100%; padding:10px;"></textarea>
+            <button type="submit" style="background:#ff7a00; color:white; border:none; padding:15px; width:100%; cursor:pointer;">Envoyer</button>
+        </form>
+    </div>
+    <footer>© 2026 Signature Moving & Crating Canada</footer>
+</body>
+</html>
