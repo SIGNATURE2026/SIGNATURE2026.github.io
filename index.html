@@ -3,100 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signature Moving & Crating Canada | Ottawa & Gatineau</title>
-    <meta name="description" content="Manutention industrielle, déménagement de machinerie et caissage sur mesure à Ottawa et Gatineau.">
+    <title>Signature Moving & Crating Canada | Expert en Logistique Industrielle</title>
+    <meta name="description" content="Spécialiste en manutention lourde, caissage sur mesure et transport d'équipements sensibles à Ottawa et Gatineau.">
     <style>
-        body{font-family:Arial, sans-serif;margin:0;background:#f4f4f4;color:#333;line-height:1.6;}
-        .lang-bar{background:#111;color:white;text-align:right;padding:10px 20px;}
-        .lang-bar button{background:none;border:1px solid white;color:white;padding:4px 10px;cursor:pointer;font-weight:bold;}
-        header{background:white;text-align:center;padding:25px;border-bottom:3px solid #003366;}
-        .logo{max-width:300px;height:auto;}
-        .hero{background:#003366;color:white;padding:60px 20px;text-align:center;}
-        .hero h1{font-size:32px;margin-bottom:10px;}
-        .container{max-width:1100px;margin:auto;padding:20px;}
-        .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:40px 0;}
-        .card{background:white;padding:25px;border-radius:8px;border:1px solid #ddd;text-align:center;transition:0.3s;}
-        .card:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.1);}
-        .cta-btn{background:#e74c3c;color:white;padding:15px 30px;text-decoration:none;font-weight:bold;border-radius:5px;display:inline-block;margin-top:20px;}
-        .quote{background:#fff;padding:40px;border-radius:8px;text-align:center;border:1px solid #ddd;margin:40px 0;}
-        .quote input, .quote textarea{width:100%;max-width:500px;padding:12px;margin:10px auto;display:block;border:1px solid #ccc;border-radius:4px;}
-        .quote button{background:#27ae60;color:white;border:none;padding:15px 40px;font-weight:bold;cursor:pointer;border-radius:4px;font-size:16px;}
-        .map{margin-top:40px;background:white;padding:15px;border-radius:8px;border:1px solid #ddd;}
-        footer{background:#333;color:white;text-align:center;padding:30px;margin-top:40px;}
-        .en{display:none;}
+        :root {
+            --primary: #002D58; /* Bleu Industriel */
+            --secondary: #E67E22; /* Orange Sécurité */
+            --light: #F8F9FA;
+            --dark: #1A1A1A;
+        }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        /* Bar de langue */
+        .lang-bar { background: var(--dark); color: white; text-align: right; padding: 8px 5%; font-size: 0.9em; }
+        .lang-bar span { cursor: pointer; margin-left: 15px; font-weight: bold; transition: 0.3s; }
+        .lang-bar span:hover { color: var(--secondary); }
+
+        header { background: white; padding: 20px 5%; display: flex; justify-content: center; align-items: center; border-bottom: 4px solid var(--primary); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { max-height: 80px; width: auto; }
+
+        .hero { background: linear-gradient(rgba(0,45,88,0.85), rgba(0,45,88,0.85)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200') center/cover; color: white; padding: 100px 20px; text-align: center; }
+        .hero h1 { font-size: 2.8em; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        .hero p { font-size: 1.3em; max-width: 800px; margin: 0 auto 30px; }
+
+        .cta-btn { background: var(--secondary); color: white; padding: 18px 35px; text-decoration: none; font-weight: bold; border-radius: 4px; display: inline-block; transition: 0.3s; text-transform: uppercase; }
+        .cta-btn:hover { background: #D35400; transform: scale(1.05); }
+
+        .container { max-width: 1200px; margin: auto; padding: 60px 20px; }
+        
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { color: var(--primary); font-size: 2.2em; text-transform: uppercase; }
+        .section-title div { width: 60px; height: 4px; background: var(--secondary); margin: 10px auto; }
+
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 40px 30px; border-radius: 4px; border-top: 5px solid var(--primary); box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+        .card h3 { color: var(--primary); margin-top: 0; }
+
+        .benefits { background: var(--primary); color: white; padding: 60px 20px; text-align: center; margin-top: 40px; }
+        .benefits-grid { display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: auto; }
+        .benefit-item { padding: 20px; min-width: 250px; }
+        .benefit-item h4 { font-size: 1.5em; color: var(--secondary); margin-bottom: 10px; }
+
+        .quote { background: white; padding: 50px; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); max-width: 700px; margin: -60px auto 40px; position: relative; z-index: 10; }
+        .quote h2 { text-align: center; color: var(--primary); }
+        .quote input, .quote textarea { width: 100%; padding: 15px; margin: 12px 0; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        .quote button { width: 100%; background: var(--primary); color: white; border: none; padding: 20px; font-weight: bold; cursor: pointer; border-radius: 4px; font-size: 18px; transition: 0.3s; }
+        .quote button:hover { background: var(--dark); }
+
+        footer { background: var(--dark); color: #bbb; text-align: center; padding: 40px; margin-top: 40px; }
+        footer strong { color: white; }
+
+        .hidden { display: none; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2em; } }
     </style>
 </head>
 <body>
 
 <div class="lang-bar">
-    <button onclick="show('fr')">FR</button> | <button onclick="show('en')">EN</button>
+    <span onclick="show('fr')">FRANÇAIS</span> | <span onclick="show('en')">ENGLISH</span>
 </div>
 
 <header>
-    <img src="1772619062185.png" alt="Signature Moving & Crating Canada" class="logo">
+    <img src="1772619062185.png" alt="Signature Moving & Crating" class="logo">
 </header>
 
 <div id="fr">
-    <div class="hero">
-        <h1>Manutention Industrielle & Transport Spécialisé</h1>
-        <p>Expertise de précision à Ottawa & Gatineau</p>
-        <a href="tel:6138593343" class="cta-btn">Appelez-nous : 613-859-3343</a>
-    </div>
+    <section class="hero">
+        <h1>Manutention Industrielle de Précision</h1>
+        <p>Expertise en déménagement de machinerie lourde et caissage sur mesure à Ottawa & Gatineau.</p>
+        <a href="tel:6138593343" class="cta-btn">Parler à un expert : 613-859-3343</a>
+    </section>
+
     <div class="container">
+        <div class="section-title">
+            <h2>Nos Services Spécialisés</h2>
+            <div></div>
+        </div>
         <div class="services">
-            <div class="card"><h3>Manutention Industrielle</h3><p>Relocalisation de machinerie lourde.</p></div>
-            <div class="card"><h3>Caissage sur Mesure</h3><p>Caisses en bois pour transport et exportation.</p></div>
-            <div class="card"><h3>Transport Spécialisé</h3><p>Pianos, coffres-forts et équipements sensibles.</p></div>
+            <div class="card">
+                <h3>Logistique de Machinerie</h3>
+                <p>Relocalisation sécurisée d'équipements industriels et médicaux de haute valeur. Nous gérons le levage et le transport complexe.</p>
+            </div>
+            <div class="card">
+                <h3>Caissage Exportation</h3>
+                <p>Fabrication de caisses en bois conformes aux normes internationales (NIMF-15) pour une protection maximale durant le transport.</p>
+            </div>
+            <div class="card">
+                <h3>Transport Sensible</h3>
+                <p>Manutention spécialisée de pianos de concert, coffres-forts et serveurs informatiques nécessitant une rigueur absolue.</p>
+            </div>
         </div>
-        <div class="quote">
-            <h2>Estimation Gratuite</h2>
-            <form action="https://formspree.io/f/mgonojqp" method="POST">
-                <input type="text" name="nom" placeholder="Votre Nom" required>
-                <input type="tel" name="tel" placeholder="Téléphone" required>
-                <textarea name="message" placeholder="Détails du projet..." rows="4" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
+    </div>
+
+    <section class="benefits">
+        <div class="benefits-grid">
+            <div class="benefit-item"><h4>+15 ans</h4><p>D'expérience terrain</p></div>
+            <div class="benefit-item"><h4>Certifié</h4><p>Normes de sécurité rigoureuses</p></div>
+            <div class="benefit-item"><h4>Assuré</h4><p>Protection complète de vos actifs</p></div>
         </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179218.0039213197!2d-75.93246835002484!3d45.42478446214041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e1305e16c!2sOttawa%2C%20ON!5e0!3m2!1sfr!2sca!4v1710100000000!5m2!1sfr!2sca" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+    </section>
+
+    <div class="quote">
+        <h2>Demande de Soumission</h2>
+        <form action="https://formspree.io/f/mgonojqp" method="POST">
+            <input type="text" name="nom" placeholder="Votre Nom / Entreprise" required>
+            <input type="tel" name="tel" placeholder="Téléphone direct" required>
+            <textarea name="message" placeholder="Décrivez votre projet (poids, dimensions, destination)..." rows="5" required></textarea>
+            <button type="submit">OBTENIR MON ESTIMATION</button>
+        </form>
     </div>
 </div>
 
-<div id="en" class="en">
-    <div class="hero">
-        <h1>Industrial Moving & Custom Crating</h1>
-        <p>Precision Handling in Ottawa & Gatineau</p>
-        <a href="tel:6138593343" class="cta-btn">Call us: 613-859-3343</a>
-    </div>
+<div id="en" class="hidden">
+    <section class="hero">
+        <h1>Precision Industrial Handling</h1>
+        <p>Heavy machinery moving and custom crating experts in Ottawa & Gatineau.</p>
+        <a href="tel:6138593343" class="cta-btn">Call an Expert: 613-859-3343</a>
+    </section>
+
     <div class="container">
+        <div class="section-title">
+            <h2>Our Specialized Services</h2>
+            <div></div>
+        </div>
         <div class="services">
-            <div class="card"><h3>Industrial Moving</h3><p>Heavy machinery relocation.</p></div>
-            <div class="card"><h3>Custom Crating</h3><p>Wooden crates for shipping and export.</p></div>
-            <div class="card"><h3>Specialized Transport</h3><p>Pianos, safes, and sensitive equipment.</p></div>
+            <div class="card">
+                <h3>Machinery Moving</h3>
+                <p>Secure relocation of high-value industrial and medical equipment. We handle heavy lifting and complex logistics.</p>
+            </div>
+            <div class="card">
+                <h3>Custom Crating</h3>
+                <p>Wooden crates manufactured to international standards (ISPM-15) for maximum protection during global transit.</p>
+            </div>
+            <div class="card">
+                <h3>Specialized Transport</h3>
+                <p>Expert handling of concert pianos, safes, and IT servers requiring absolute precision and care.</p>
+            </div>
         </div>
-        <div class="quote">
-            <h2>Free Quote</h2>
-            <form action="https://formspree.io/f/mgonojqp" method="POST">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="tel" name="phone" placeholder="Phone" required>
-                <textarea name="message" placeholder="Project details..." rows="4" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+    </div>
+
+    <section class="benefits">
+        <div class="benefits-grid">
+            <div class="benefit-item"><h4>15+ Years</h4><p>Field Experience</p></div>
+            <div class="benefit-item"><h4>Certified</h4><p>Top Safety Standards</p></div>
+            <div class="benefit-item"><h4>Fully Insured</h4><p>Protecting your valuable assets</p></div>
         </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179218.0039213197!2d-75.93246835002484!3d45.42478446214041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e1305e16c!2sOttawa%2C%20ON!5e0!3m2!1sfr!2sca!4v1710100000000!5m2!1sfr!2sca" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+    </section>
+
+    <div class="quote">
+        <h2>Request a Quote</h2>
+        <form action="https://formspree.io/f/mgonojqp" method="POST">
+            <input type="text" name="name" placeholder="Full Name / Company" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <textarea name="message" placeholder="Describe your project (weight, dimensions, destination)..." rows="5" required></textarea>
+            <button type="submit">GET MY ESTIMATE</button>
+        </form>
     </div>
 </div>
 
-<footer><p>© 2026 Signature Moving & Crating Canada | Gatineau, QC</p></footer>
+<footer>
+    <p><strong>Signature Moving & Crating Canada</strong><br>
+    Services de logistique industrielle à Ottawa, ON et Gatineau, QC.<br>
+    Basé à Ottawa, desservant la région de la Capitale Nationale.<br>
+    © 2026 - Tous droits réservés.</p>
+</footer>
 
 <script>
     function show(lang){
-        document.getElementById('fr').style.display = (lang === 'fr') ? 'block' : 'none';
-        document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
+        if(lang === 'fr'){
+            document.getElementById('fr').classList.remove('hidden');
+            document.getElementById('en').classList.add('hidden');
+        } else {
+            document.getElementById('fr').classList.add('hidden');
+            document.getElementById('en').classList.remove('hidden');
+        }
+        window.scrollTo(0,0);
     }
 </script>
+
 </body>
 </html>
