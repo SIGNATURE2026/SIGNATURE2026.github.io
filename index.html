@@ -1,107 +1,366 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accueil - Signature Moving & Crating Canada</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<title>Signature Moving & Crating Canada</title>
+
+<meta name="description" content="Transport de machinerie, caissage sur mesure et transport d'objets fragiles à Ottawa et Gatineau.">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Roboto',sans-serif;background:#000;color:#fff;scroll-behavior:smooth}
-nav{position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:rgba(0,0,0,.95);z-index:1000;transition:background .3s}
-nav.scrolled{background:#111}
-nav .logo img{height:50px}
-nav ul{list-style:none;display:flex;gap:25px;transition:all .3s}
-nav ul li a{color:#fff;text-decoration:none;font-weight:bold;transition:color .3s}
-nav ul li a:hover{color:#ff0000}
-nav .menu-toggle{display:none;cursor:pointer;font-size:28px}
-section.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background-size:cover;background-position:center;padding:0 20px;opacity:0;transform:translateY(50px);animation:fadeIn 1s forwards}
-section.hero h1{font-size:3em;margin-bottom:20px}
-section.hero p{font-size:1.2em}
-.btn{padding:15px 40px;border:2px solid #fff;color:#fff;text-decoration:none;border-radius:50px;font-weight:bold;margin-top:20px;display:inline-block;transition:all .3s}
-.btn:hover{background:#ff0000;color:#fff}
-section.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;padding:60px 5%;opacity:0;transform:translateY(50px)}
-section.services .card{background:#111;padding:20px;border-radius:15px;text-align:center;transition:all .3s}
-section.services .card img{width:100%;height:auto;border-radius:10px;margin-bottom:15px}
-section.services .card h3{margin-bottom:10px}
-section.contact{background:#111;padding:60px 5%;text-align:center;opacity:0;transform:translateY(50px)}
-section.contact input,section.contact textarea{width:100%;padding:15px;margin-bottom:15px;border-radius:5px;border:none}
-section.contact button{padding:15px 40px;border:none;border-radius:50px;background:#fff;color:#000;font-weight:bold;cursor:pointer;transition:all .3s}
-section.contact button:hover{background:#ff0000;color:#fff}
-footer{background:#111;text-align:center;padding:30px 5%;margin-top:40px;font-size:.9em}
-.call-button{position:fixed;bottom:20px;right:20px;background:#ff0000;color:#fff;border-radius:50%;padding:15px;font-size:24px;text-decoration:none;z-index:1001;transition:all .3s}
-.call-button:hover{transform:scale(1.1)}
-@media(max-width:768px){nav ul{display:none;flex-direction:column;gap:10px;background:rgba(0,0,0,.95);position:absolute;top:70px;right:5%;padding:20px;border-radius:10px}
-.menu-toggle{display:block}}
-@keyframes fadeIn{to{opacity:1;transform:translateY(0)}}.show{opacity:1;transform:translateY(0)}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Roboto;
+}
+
+body{
+background:#000;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+z-index:1000;
+}
+
+.logo img{
+height:50px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:red;
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:url("fragilehighvaluetransportation.png") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+max-width:700px;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 40px;
+border:2px solid white;
+border-radius:40px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+.btn:hover{
+background:red;
+}
+
+/* SERVICES */
+
+.services{
+padding:100px 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.card{
+background:#111;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* CONTACT */
+
+.contact{
+background:#111;
+padding:80px 20px;
+text-align:center;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+max-width:500px;
+padding:15px;
+margin:10px;
+border:none;
+border-radius:5px;
+}
+
+.contact button{
+padding:15px 40px;
+border:none;
+background:white;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.contact button:hover{
+background:red;
+color:white;
+}
+
+/* FOOTER */
+
+footer{
+padding:40px;
+text-align:center;
+background:black;
+}
+
+/* CALL BUTTON */
+
+.call{
+position:fixed;
+right:20px;
+bottom:20px;
+background:red;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+left:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+right:20px;
+background:black;
+padding:20px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
+
 </style>
+
 </head>
+
 <body>
 
-<nav id="navbar">
-<div class="logo"><img src="1772619062185.png" alt="Logo"></div>
+<nav>
+
+<div class="logo">
+<img src="1772619062185.png">
+</div>
+
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
 <ul id="menu">
+
 <li><a href="index.html">Accueil</a></li>
 <li><a href="machinery.html">Machinerie</a></li>
 <li><a href="crating.html">Caissage</a></li>
 <li><a href="transport.html">Transport</a></li>
 <li><a href="#contact">Contact</a></li>
 <li><a href="index-en.html">EN</a></li>
+
 </ul>
+
 </nav>
 
-<section class="hero" style="background-image:url('fragilehighvaluetransportation.png');">
-<h1>Transport et Caissage Sécurisé</h1>
-<p>Machines, laboratoires, pianos et objets précieux, nous les transportons avec soin.</p>
-<a href="#contact" class="btn">Demande de Soumission</a>
+<section class="hero">
+
+<h1>Signature Moving & Crating Canada</h1>
+
+<p>
+Transport professionnel de machines, laboratoires,
+pianos et objets fragiles à Ottawa et Gatineau.
+</p>
+
+<a href="#contact" class="btn">Demande de soumission</a>
+
 </section>
 
 <section class="services">
+
 <div class="card">
-<img src="machinerylaboratorymovers.png" alt="Machinerie">
+
+<img src="machinerylaboratorymovers.png">
+
 <h3>Machinerie</h3>
-<p>Transport sécurisé de machines industrielles et équipements sensibles.</p>
+
+<p>
+Transport de machines industrielles et équipements
+de laboratoire.
+</p>
+
 </div>
+
 <div class="card">
-<img src="customcratingottawa.png" alt="Caissage">
-<h3>Caissage</h3>
-<p>Fabrication de caisses sur mesure pour objets fragiles et précieux.</p>
+
+<img src="customcratingottawa.png">
+
+<h3>Caissage sur mesure</h3>
+
+<p>
+Fabrication de caisses personnalisées pour objets
+fragiles et précieux.
+</p>
+
 </div>
+
 <div class="card">
-<img src="fragilehighvaluetransportation.png" alt="Transport">
-<h3>Transport</h3>
-<p>Livraison sécurisée de vos biens fragiles et de valeur partout.</p>
+
+<img src="fragilehighvaluetransportation.png">
+
+<h3>Transport sécurisé</h3>
+
+<p>
+Livraison professionnelle d'objets fragiles et
+de valeur.
+</p>
+
 </div>
+
 </section>
 
 <section class="contact" id="contact">
-<h2>Contactez-nous</h2>
-<p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
-<form id="contactForm" action="https://formspree.io/f/mgonojqp" method="POST">
+
+<h2>Contact</h2>
+
+<p>Email : info@signaturemovingcrating.ca</p>
+
+<form action="https://formspree.io/f/mgonojqp" method="POST">
+
 <input type="text" name="nom" placeholder="Nom" required>
+
 <input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Votre projet" rows="4"></textarea>
-<button type="submit">ENVOYER</button>
+
+<textarea name="message" placeholder="Votre projet"></textarea>
+
+<br>
+
+<button type="submit">Envoyer</button>
+
 </form>
-<p id="confirmation" style="display:none;color:#ff0000;margin-top:10px;font-weight:bold;">Merci, nous avons reçu votre message !</p>
+
+<br>
+
+<iframe
+src="https://www.google.com/maps?q=Ottawa&output=embed"
+width="100%"
+height="300"
+style="border:0;border-radius:10px;">
+</iframe>
+
 </section>
 
 <footer>
-<p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
-<p>📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
+
+<p>Signature Moving & Crating Canada</p>
+
+<p>📞 613-859-3343</p>
+
+<p>info@signaturemovingcrating.ca</p>
+
 </footer>
 
-<a href="tel:16138593343" class="call-button">📞</a>
+<a class="call" href="tel:16138593343">📞</a>
+
+<a class="whatsapp" href="https://wa.me/16138593343">💬</a>
 
 <script>
-function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
-window.addEventListener('scroll', function(){document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);});
-const sections=document.querySelectorAll('.hero,.services,.contact');
-const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');}})},{threshold:0.2});
-sections.forEach(section=>observer.observe(section));
-document.getElementById('contactForm').addEventListener('submit', function(e){setTimeout(()=>{document.getElementById('confirmation').style.display='block';},500);});
+
+function toggleMenu(){
+
+let menu=document.getElementById("menu");
+
+if(menu.style.display==="flex"){
+menu.style.display="none";
+}else{
+menu.style.display="flex";
+}
+
+}
+
 </script>
 
 </body>
+
 </html>
