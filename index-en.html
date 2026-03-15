@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signature Moving & Crating Canada | Home</title>
+<meta name="description" content="Elite protection and precision transport in Ottawa & Gatineau.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif;}
+body{scroll-behavior:smooth;}
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 5%;z-index:1000;background:rgba(0,0,0,0.5);}
+nav .logo img{height:60px;}
+nav ul{display:flex;list-style:none;gap:25px;}
+nav ul li a{color:white;text-decoration:none;font-weight:bold;}
+nav ul li a:hover{color:#E67E22;}
+.menu-toggle{display:none;font-size:30px;color:white;cursor:pointer;}
+.hero{height:80vh;background:url('machinerylaboratorymovers.png') center/cover no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white;position:relative;}
+.hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);}
+.hero h1,.hero p{position:relative;z-index:2;text-shadow:2px 2px 4px rgba(0,0,0,0.5);}
+.hero h1{font-size:4vw;margin-bottom:20px;color:#E67E22;}
+.hero p{font-size:1.5vw;color:#F8F9FA;}
+.btn{padding:12px 25px;background:#E67E22;color:white;text-decoration:none;border-radius:30px;font-weight:bold;margin-top:20px;display:inline-block;transition:0.3s;}
+.btn:hover{background:#002D58;}
+.services{padding:50px 5%;display:flex;flex-wrap:wrap;gap:30px;justify-content:center;}
+.card{background:white;color:#000;padding:30px;border-radius:10px;flex:1 1 300px;max-width:350px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:0.3s;}
+.card:hover{transform:translateY(-10px);box-shadow:0 12px 30px rgba(0,0,0,0.15);}
+.card img{width:100%;border-radius:10px;margin-bottom:15px;}
+.card h3{color:#002D58;margin-bottom:10px;}
+.card p{color:#555;line-height:1.5;}
+.contact{padding:50px 5%;background:#111;color:white;text-align:center;}
+.contact input,.contact textarea{width:100%;padding:15px;margin:10px 0;border-radius:5px;border:none;}
+.contact button{padding:20px;background:#E67E22;color:white;border:none;font-weight:bold;width:100%;cursor:pointer;}
+.contact button:hover{background:#002D58;}
+footer{background:#000;color:white;text-align:center;padding:40px;}
+footer a{color:#E67E22;text-decoration:none;}
+.call-button{position:fixed;bottom:20px;right:20px;background:#E67E22;color:white;font-size:30px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;text-decoration:none;z-index:999;}
+@media(max-width:768px){.menu-toggle{display:block;}nav ul{display:none;flex-direction:column;width:100%;text-align:center;padding:20px 0;}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo"><img src="1772619062185.png" alt="Logo"></div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul id="menu">
+<li><a href="index-en.html">Home</a></li>
+<li><a href="machinery-en.html">Machinery</a></li>
+<li><a href="crating-en.html">Crating</a></li>
+<li><a href="transport-en.html">Transport</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="index.html">FR</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Signature Moving & Crating Canada</h1>
+<p>Elite protection and precision transport in Ottawa & Gatineau</p>
+<a href="#contact" class="btn">Request a Quote</a>
+</section>
+
+<section class="services">
+<div class="card">
+<img src="machinerylaboratorymovers.png" alt="Machinery">
+<h3>Machinery</h3>
+<p>Industrial relocation and factories. Safe relocation of industrial and medical equipment.</p>
+<a href="machinery-en.html" class="btn">Learn More</a>
+</div>
+<div class="card">
+<img src="customcratingottawa.png" alt="Crating">
+<h3>Crating</h3>
+<p>Custom crates for fragile items and international export, built to professional standards.</p>
+<a href="crating-en.html" class="btn">Learn More</a>
+</div>
+<div class="card">
+<img src="fragilehighvaluetransportation.png" alt="Transport">
+<h3>Transport</h3>
+<p>Secure transportation of pianos, safes, and high-value equipment with full insurance.</p>
+<a href="transport-en.html" class="btn">Learn More</a>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>Request a Quote</h2>
+<p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
+<form action="https://formspree.io/f/mgonojqp" method="POST">
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Describe your project" rows="4"></textarea>
+<button type="submit">SEND</button>
+</form>
+</section>
+
+<footer>
+<p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
+<p>📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
+</footer>
+
+<a href="tel:16138593343" class="call-button">📞</a>
+
+<script>
+function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
+</script>
+
+</body>
+</html>
