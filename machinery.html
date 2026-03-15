@@ -4,51 +4,63 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Machinerie - Signature Moving & Crating Canada</title>
-<meta name="description" content="Déménagement industriel et transport de machines et laboratoires.">
+<meta name="description" content="Transport sécurisé de machines et équipements industriels.">
+<meta name="keywords" content="machinerie, déménagement, transport, Ottawa, Canada">
+<meta name="author" content="Signature Moving & Crating Canada">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,sans-serif;background:#000;color:#fff;scroll-behavior:smooth}nav{position:fixed;width:100%;display:flex;justify-content:space-between;padding:15px 5%;background:rgba(0,0,0,.9);z-index:1000;align-items:center}nav .logo img{height:50px}nav ul{list-style:none;display:flex;gap:20px}nav ul li a{color:#fff;text-decoration:none;font-weight:bold}.menu-toggle{display:none;cursor:pointer;font-size:24px}section.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background-size:cover;background-position:center;padding:0 20px}section.hero h1{font-size:3em;margin-bottom:20px}section.hero p{font-size:1.2em}.btn{padding:15px 40px;border:2px solid #fff;color:#fff;text-decoration:none;border-radius:50px;font-weight:bold;margin-top:20px;display:inline-block}section.content{padding:60px 5%;text-align:center;max-width:1000px;margin:0 auto}section.content h2{font-size:2em;margin-bottom:20px}section.content p{font-size:1.1em;line-height:1.6;margin-bottom:15px}section.contact{background:#111;padding:60px 5%;text-align:center}section.contact h2{margin-bottom:20px}section.contact input,section.contact textarea{width:100%;padding:15px;margin-bottom:15px;border-radius:5px;border:none}section.contact button{padding:15px 40px;border:none;border-radius:50px;background:#fff;color:#000;font-weight:bold;cursor:pointer}footer{background:#111;text-align:center;padding:30px 5%;margin-top:40px;font-size:.9em}.call-button{position:fixed;bottom:20px;right:20px;background:#ff0000;color:#fff;border-radius:50%;padding:15px;font-size:24px;text-decoration:none;z-index:1001}@media(max-width:768px){nav ul{display:none;flex-direction:column;gap:10px;background:rgba(0,0,0,.95);position:absolute;top:70px;right:5%;padding:20px;border-radius:10px}.menu-toggle{display:block}}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Roboto',sans-serif;background:#000;color:#fff;scroll-behavior:smooth}nav{position:fixed;width:100%;display:flex;justify-content:space-between;padding:15px 5%;background:rgba(0,0,0,.95);z-index:1000;align-items:center;transition:background .3s}nav.scrolled{background:#111}nav .logo img{height:50px}nav ul{list-style:none;display:flex;gap:25px;transition:all .3s}nav ul li a{color:#fff;text-decoration:none;font-weight:bold;transition:color .3s}nav ul li a:hover{color:#ff0000}nav .menu-toggle{display:none;cursor:pointer;font-size:28px}section.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background-size:cover;background-position:center;padding:0 20px;opacity:0;transform:translateY(50px);animation:fadeIn 1s forwards}section.hero h1{font-size:3em;margin-bottom:20px}section.hero p{font-size:1.2em}.btn{padding:15px 40px;border:2px solid #fff;color:#fff;text-decoration:none;border-radius:50px;font-weight:bold;margin-top:20px;display:inline-block;transition:all .3s}.btn:hover{background:#ff0000;color:#fff}section.content{padding:60px 5%;text-align:center;max-width:1000px;margin:0 auto;opacity:0;transform:translateY(50px)}section.content h2{font-size:2em;margin-bottom:20px}section.content p{font-size:1.1em;line-height:1.6;margin-bottom:15px}section.contact{background:#111;padding:60px 5%;text-align:center;opacity:0;transform:translateY(50px)}section.contact h2{margin-bottom:20px}section.contact input,section.contact textarea{width:100%;padding:15px;margin-bottom:15px;border-radius:5px;border:none}section.contact button{padding:15px 40px;border:none;border-radius:50px;background:#fff;color:#000;font-weight:bold;cursor:pointer;transition:all .3s}section.contact button:hover{background:#ff0000;color:#fff}footer{background:#111;text-align:center;padding:30px 5%;margin-top:40px;font-size:.9em}.call-button{position:fixed;bottom:20px;right:20px;background:#ff0000;color:#fff;border-radius:50%;padding:15px;font-size:24px;text-decoration:none;z-index:1001;transition:all .3s}.call-button:hover{transform:scale(1.1)}@media(max-width:768px){nav ul{display:none;flex-direction:column;gap:10px;background:rgba(0,0,0,.95);position:absolute;top:70px;right:5%;padding:20px;border-radius:10px}.menu-toggle{display:block}}@keyframes fadeIn{to{opacity:1;transform:translateY(0)}}.show{opacity:1;transform:translateY(0)}
 </style>
 </head>
 <body>
-<nav>
-  <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  <ul id="menu">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="machinery.html">Machinerie</a></li>
-    <li><a href="crating.html">Caissage</a></li>
-    <li><a href="transport.html">Transport</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="machinery-en.html">EN</a></li>
-  </ul>
+<nav id="navbar">
+<div class="logo"><img src="1772619062185.png" alt="Logo"></div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul id="menu">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="machinery.html">Machinerie</a></li>
+<li><a href="crating.html">Caissage</a></li>
+<li><a href="transport.html">Transport</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="machinery-en.html">EN</a></li>
+</ul>
 </nav>
+
 <section class="hero" style="background-image:url('machinerylaboratorymovers.png');">
-<h1>Machinerie</h1>
-<p>Déménagement industriel & transport de laboratoires et machines.</p>
+<h1>Transport de Machinerie</h1>
+<p>Déplacement sécurisé d’équipements industriels et laboratoires.</p>
 <a href="#contact" class="btn">Demande de Soumission</a>
 </section>
+
 <section class="content">
 <h2>Détails du Service</h2>
-<p>Nous assurons le déménagement industriel, le transport de laboratoires et d’équipements lourds en toute sécurité.</p>
-<p>Notre équipe spécialisée garantit la protection de vos machines et équipements pendant tout le processus.</p>
+<p>Nous transportons vos machines industrielles et équipements sensibles avec expertise et sécurité maximale.</p>
 </section>
+
 <section class="contact" id="contact">
-<h2>Demande de Soumission</h2>
+<h2>Contactez-nous</h2>
 <p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
-<form action="https://formspree.io/f/mgonojqp" method="POST">
+<form id="contactForm" action="https://formspree.io/f/mgonojqp" method="POST">
 <input type="text" name="nom" placeholder="Nom" required>
 <input type="email" name="email" placeholder="Email" required>
 <textarea name="message" placeholder="Votre projet" rows="4"></textarea>
 <button type="submit">ENVOYER</button>
 </form>
+<p id="confirmation" style="display:none;color:#ff0000;margin-top:10px;font-weight:bold;">Merci, nous avons reçu votre message !</p>
 </section>
+
 <footer>
 <p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
 <p>📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
 </footer>
+
 <a href="tel:16138593343" class="call-button">📞</a>
+
 <script>
 function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
+window.addEventListener('scroll', function(){document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);});
+const sections=document.querySelectorAll('.hero,.content,.contact');const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');}})},{threshold:0.2});sections.forEach(section=>observer.observe(section));
+document.getElementById('contactForm').addEventListener('submit', function(e){setTimeout(()=>{document.getElementById('confirmation').style.display='block';},500);});
 </script>
 </body>
 </html>
