@@ -3,69 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signature Moving & Crating Canada</title>
-<meta name="description" content="Spécialiste en déménagement industriel, caissage sur mesure et transport d'objets fragiles et précieux à Ottawa & Gatineau.">
+<title>Signature Moving & Crating Canada | Déménagement Industriel et Caissage</title>
+<meta name="description" content="Signature Moving & Crating Canada : spécialiste en déménagement industriel, caissage sur mesure et transport d'objets fragiles à Ottawa & Gatineau.">
+<meta name="keywords" content="Déménagement industriel Ottawa, Caissage sur mesure, Transport d'objets fragiles, Machinerie lourde, Ottawa, Gatineau">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Signature Moving & Crating Canada">
+<meta property="og:description" content="Spécialiste en déménagement industriel, caissage sur mesure et transport d'objets fragiles à Ottawa & Gatineau.">
+<meta property="og:image" content="https://www.signaturemovingcrating.ca/fragilehighvaluetransportation.png">
+<meta property="og:url" content="https://www.signaturemovingcrating.ca/">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Signature Moving & Crating Canada">
+<meta name="twitter:description" content="Déménagement industriel et caissage sur mesure à Ottawa & Gatineau.">
+<meta name="twitter:image" content="https://www.signaturemovingcrating.ca/fragilehighvaluetransportation.png">
+
+<link rel="canonical" href="https://www.signaturemovingcrating.ca/">
+
 <style>
-* { box-sizing: border-box; margin:0; padding:0; }
-body { font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height:1.6; scroll-behavior:smooth; color:#333; }
-a { text-decoration:none; color:inherit; }
-img { max-width:100%; height:auto; display:block; }
-:root { --primary:#002D58; --secondary:#E67E22; --light:#F8F9FA; --dark:#1A1A1A; }
+/* Reset et base */
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth;}
+body{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#333;line-height:1.6;background:#f8f9fa;}
+
+/* Variables */
+:root{--primary:#002D58;--secondary:#E67E22;--dark:#1A1A1A;--white:#fff;}
 
 /* Navbar */
-nav { position:fixed; width:100%; display:flex; justify-content:space-between; align-items:center; padding:15px 5%; background:rgba(0,0,0,0.85); z-index:1000; color:white; }
-nav .logo img { height:60px; }
-.lang-switch { cursor:pointer; font-weight:bold; border:1px solid #fff; padding:5px 12px; border-radius:5px; }
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:rgba(0,0,0,0.85);color:white;z-index:1000;transition:0.3s;}
+nav.scrolled{background:rgba(0,0,0,0.95);}
+nav .logo img{height:60px;}
+nav ul{list-style:none;display:flex;gap:25px;}
+nav ul li{cursor:pointer;font-weight:bold;transition:0.3s;}
+nav ul li:hover{color:var(--secondary);}
+.lang-switch{cursor:pointer;font-weight:bold;border:1px solid #fff;padding:5px 12px;border-radius:5px;transition:0.3s;}
+.lang-switch:hover{background:var(--secondary);border-color:var(--secondary);}
 
-/* Hero sections */
-section { min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:100px 5%; background-size:cover; background-position:center; position:relative; }
-section::before { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.45); z-index:0; }
-section > * { position:relative; z-index:1; color:white; }
-h1 { font-size:clamp(2em, 6vw, 3.5em); margin-bottom:20px; }
-p { font-size:1.2em; max-width:700px; margin:0 auto 20px; }
-.btn { padding:15px 40px; border:2px solid #fff; color:#fff; border-radius:50px; font-weight:bold; text-transform:uppercase; margin-top:20px; display:inline-block; transition:0.3s; }
-.btn:hover { background:var(--secondary); border-color:var(--secondary); transform:scale(1.05); }
+/* Hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background-size:cover;background-position:center;position:relative;}
+.hero::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.45);z-index:0;}
+.hero > *{position:relative;z-index:1;animation:fadeInUp 1s ease forwards;}
+@keyframes fadeInUp{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:translateY(0);}}
+h1{font-size:clamp(2em,6vw,3.5em);margin-bottom:20px;}
+p{font-size:1.2em;max-width:700px;margin:0 auto 20px;}
+.btn{padding:15px 40px;border:2px solid #fff;color:#fff;border-radius:50px;font-weight:bold;text-transform:uppercase;margin-top:20px;display:inline-block;transition:0.3s;}
+.btn:hover{background:var(--secondary);border-color:var(--secondary);transform:scale(1.05);}
 
-/* Services */
-.services { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; margin:60px 0; }
-.card { background:white; color:#333; padding:30px 20px; border-radius:10px; box-shadow:0 4px 20px rgba(0,0,0,0.1); transition:0.3s; text-align:center; }
-.card:hover { transform:translateY(-10px); box-shadow:0 12px 30px rgba(0,0,0,0.15); }
-.card img { border-radius:10px; margin-bottom:15px; }
-.card h3 { color:var(--primary); margin-bottom:10px; }
+/* Sections */
+section{padding:100px 5%;}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin:60px 0;}
+.card{background:white;color:#333;padding:30px 20px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1);transition:transform 0.3s, box-shadow 0.3s;text-align:center;opacity:0;transform:translateY(30px);}
+.card.visible{opacity:1;transform:translateY(0);}
+.card img{border-radius:10px;margin-bottom:15px;}
+.card h3{color:var(--primary);margin-bottom:10px;}
 
 /* Testimonials */
-.testimonials { background:var(--light); color:#333; padding:60px 20px; }
-.testimonial-item { background:white; padding:25px 30px; margin:20px auto; max-width:600px; border-radius:10px; box-shadow:0 4px 20px rgba(0,0,0,0.1); }
-.testimonial-item h4 { margin-top:10px; color:var(--primary); font-weight:bold; }
+.testimonials{background:#f0f0f0;color:#333;padding:60px 20px;text-align:center;}
+.testimonial-item{background:white;padding:25px 30px;margin:20px auto;max-width:600px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+.testimonial-item h4{margin-top:10px;color:var(--primary);font-weight:bold;}
 
-/* Contact & Map */
-#contact { background:#fff; color:#000; padding:60px 5%; text-align:center; }
-#contact form { max-width:450px; margin:30px auto 0; }
-#contact input, #contact textarea { width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:5px; }
-#contact button { width:100%; padding:18px; border:none; background:var(--primary); color:white; font-weight:bold; border-radius:5px; cursor:pointer; transition:0.3s; }
-#contact button:hover { background:var(--dark); }
-#confirmationMessage { display:none; color:green; font-weight:bold; margin-top:15px; }
-.map-container iframe { width:100%; height:300px; border-radius:10px; box-shadow:0 4px 20px rgba(0,0,0,0.2); }
+/* Contact */
+#contact{background:#fff;color:#000;padding:60px 5%;text-align:center;}
+#contact form{max-width:450px;margin:30px auto 0;}
+#contact input,#contact textarea{width:100%;padding:15px;margin-bottom:15px;border:1px solid #ddd;border-radius:5px;}
+#contact button{width:100%;padding:18px;border:none;background:var(--primary);color:white;font-weight:bold;border-radius:5px;cursor:pointer;transition:0.3s;}
+#contact button:hover{background:var(--dark);}
+#confirmationMessage{display:none;color:green;font-weight:bold;margin-top:15px;}
+.map-container iframe{width:100%;height:300px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.2);}
 
 /* Footer */
-footer { background:var(--dark); color:#bbb; text-align:center; padding:40px 20px; }
+footer{background:var(--dark);color:#bbb;text-align:center;padding:40px 20px;}
 
-/* Languages */
-.fr { display:block; } .en { display:none; }
+/* Langues */
+.fr{display:block;} .en{display:none;}
 
 /* Responsive */
-@media(max-width:768px){ h1{font-size:2em;} .services{grid-template-columns:1fr;} }
+@media(max-width:768px){ nav ul{flex-direction:column;gap:15px;margin-top:10px;} h1{font-size:2em;} .services{grid-template-columns:1fr;} }
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="logo"><img src="1772619062185.png" alt="Signature Moving & Crating Logo"></div>
+<nav id="navbar">
+  <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
+  <ul>
+    <li onclick="scrollToSection('home')"><span class="fr">Accueil</span><span class="en">Home</span></li>
+    <li onclick="scrollToSection('services')"><span class="fr">Services</span><span class="en">Services</span></li>
+    <li onclick="scrollToSection('testimonials')"><span class="fr">Témoignages</span><span class="en">Testimonials</span></li>
+    <li onclick="scrollToSection('contact')"><span class="fr">Contact</span><span class="en">Contact</span></li>
+  </ul>
   <div onclick="toggleLang()" class="lang-switch">FR | EN</div>
 </nav>
 
 <!-- Hero -->
-<section id="home" style="background-image:url('fragilehighvaluetransportation.png');">
+<section id="home" class="hero" style="background-image:url('fragilehighvaluetransportation.png');">
   <div class="fr">
     <h1>Signature Moving & Crating Canada</h1>
     <p>Protection d'élite et transport de précision à Ottawa & Gatineau.</p>
@@ -82,14 +114,14 @@ footer { background:var(--dark); color:#bbb; text-align:center; padding:40px 20p
 <section id="services">
   <div class="services">
     <div class="card">
-      <img src="machinerylaboratorymovers.png" alt="Déménagement industriel et de laboratoires">
+      <img src="machinerylaboratorymovers.png" alt="Machinerie et laboratoires">
       <h3 class="fr">Machinerie & Laboratoires</h3>
       <h3 class="en">Machinery & Laboratory Movers</h3>
       <p class="fr">Relocalisation sécurisée de machinerie lourde et équipements de laboratoire.</p>
       <p class="en">Safe relocation of heavy machinery and laboratory equipment.</p>
     </div>
     <div class="card">
-      <img src="customcratingottawa.png" alt="Caissage sur mesure Ottawa">
+      <img src="customcratingottawa.png" alt="Caissage sur mesure">
       <h3 class="fr">Caissage Sur Mesure</h3>
       <h3 class="en">Custom Crating</h3>
       <p class="fr">Protection certifiée pour pianos, objets fragiles et exportation.</p>
@@ -124,10 +156,8 @@ footer { background:var(--dark); color:#bbb; text-align:center; padding:40px 20p
     <button type="submit">ENVOYER / SEND</button>
     <p id="confirmationMessage">Merci ! Votre demande a été envoyée avec succès.</p>
   </form>
-
-  <!-- Google Map -->
   <div class="map-container" style="margin-top:30px;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.123456789!2d-75.7000!3d45.4215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce058e12ab1234%3A0x123456789abcdef!2sSignature%20Moving%20%26%20Crating%20Canada!5e0!3m2!1sfr!2sca!4v1682345678901!5m2!1sfr!2sca" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen="" loading="lazy"></iframe>
   </div>
 </section>
 
@@ -137,22 +167,35 @@ footer { background:var(--dark); color:#bbb; text-align:center; padding:40px 20p
 </footer>
 
 <script>
-// FR/EN Toggle
+// Smooth scroll
+function scrollToSection(id){ document.getElementById(id).scrollIntoView({behavior:'smooth'}); }
+// FR/EN toggle
 function toggleLang(){
-  const fr = document.querySelectorAll('.fr');
-  const en = document.querySelectorAll('.en');
+  const fr=document.querySelectorAll('.fr'); const en=document.querySelectorAll('.en');
   fr.forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
   en.forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
 }
 
-// Témoignages dynamiques
-const testimonials = [
-  {fr:"Ils ont déplacé nos machines de laboratoire en toute sécurité. Très professionnels !", en:"They moved our lab machines safely and professionally!", author:"John D., Ottawa"},
-  {fr:"Le caissage sur mesure était parfait, aucun dommage lors du transport.", en:"The custom crating was perfect, no damage during transit.", author:"Marie L., Gatineau"},
-  {fr:"Transport sécurisé et rapide de nos pianos et équipements sensibles.", en:"Secure and fast transport of our pianos and sensitive equipment.", author:"Alex R., Ottawa"}
+// Animate cards on scroll
+const cards=document.querySelectorAll('.card');
+function animateCards(){
+  const triggerBottom=window.innerHeight*0.85;
+  cards.forEach(card=>{
+    const cardTop=card.getBoundingClientRect().top;
+    if(cardTop<triggerBottom){card.classList.add('visible');}
+  });
+}
+window.addEventListener('scroll',animateCards);
+animateCards();
+
+// Testimonials
+const testimonials=[
+  {fr:"Ils ont déplacé nos machines de laboratoire en toute sécurité.", en:"They moved our lab machines safely.", author:"John D., Ottawa"},
+  {fr:"Le caissage sur mesure était parfait.", en:"The custom crating was perfect.", author:"Marie L., Gatineau"},
+  {fr:"Transport sécurisé et rapide de nos pianos.", en:"Secure and fast transport of our pianos.", author:"Alex R., Ottawa"}
 ];
 function displayTestimonials(){
-  const container = document.getElementById('testimonial-container');
+  const container=document.getElementById('testimonial-container');
   container.innerHTML='';
   testimonials.forEach(t=>{
     const div=document.createElement('div');
@@ -164,10 +207,14 @@ function displayTestimonials(){
 displayTestimonials();
 
 // Confirmation formulaire
-document.getElementById('contactForm').addEventListener('submit', function(){
-  document.getElementById('confirmationMessage').style.display='block';
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const form=this;
+  fetch(form.action,{method:'POST',body:new FormData(form)}).then(()=>{
+    document.getElementById('confirmationMessage').style.display='block';
+    form.reset();
+  });
 });
 </script>
-
 </body>
 </html>
