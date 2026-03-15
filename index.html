@@ -3,9 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signature Moving & Crating Canada</title>
-<meta name="description" content="Expert en manutention industrielle, caissage sur mesure et transport sécurisé à Ottawa & Gatineau.">
+<title>Signature Moving & Crating Canada | Accueil</title>
+<meta name="description" content="Protection d'élite et transport de précision de machinerie, pianos et équipements sensibles à Ottawa & Gatineau.">
 <link rel="stylesheet" href="style.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
 </head>
 <body>
 
@@ -21,49 +30,49 @@
     <div onclick="toggleLang()" class="lang-switch">FR | EN</div>
 </nav>
 
-<section class="hero" style="background-image:url('machinerylaboratorymovers.png');">
+<section style="background-image:url('fragilehighvaluetransportation.png');">
     <div class="fr">
         <h1>Signature Moving & Crating Canada</h1>
-        <p>Protection d’élite et transport de précision à Ottawa & Gatineau.</p>
+        <p>Protection d'élite et transport de précision.</p>
         <a href="#contact" class="btn">Demande de soumission</a>
     </div>
     <div class="en">
         <h1>Signature Moving & Crating Canada</h1>
-        <p>Elite protection and precision transport in Ottawa & Gatineau.</p>
+        <p>Elite protection and precision transport.</p>
         <a href="#contact" class="btn">Request a Quote</a>
     </div>
 </section>
 
-<section class="services">
-    <div class="card">
-        <img src="machinerylaboratorymovers.png" alt="Machinerie">
-        <h3>Machinerie & Laboratoires</h3>
-        <p>Relocalisation sécurisée d’équipements industriels et laboratoires.</p>
-        <a href="machinery.html" class="btn">En savoir plus</a>
-    </div>
-    <div class="card">
-        <img src="customcratingottawa.png" alt="Caissage">
-        <h3>Caissage sur mesure</h3>
-        <p>Protection certifiée pour pianos, objets fragiles et exportation.</p>
-        <a href="crating.html" class="btn">En savoir plus</a>
-    </div>
-    <div class="card">
-        <img src="fragilehighvaluetransportation.png" alt="Transport Sensible">
-        <h3>Transport sensible</h3>
-        <p>Logistique sécurisée pour objets de valeur et équipements sensibles.</p>
-        <a href="transport.html" class="btn">En savoir plus</a>
-    </div>
+<section class="container">
+<h2 class="fr">Nos Services</h2>
+<h2 class="en">Our Services</h2>
+<ul class="fr">
+<li>Machinerie & Laboratoires</li>
+<li>Caissage sur mesure</li>
+<li>Transport sensible</li>
+</ul>
+<ul class="en">
+<li>Machinery & Laboratory Movers</li>
+<li>Custom Crating</li>
+<li>Sensitive Transportation</li>
+</ul>
+<a href="machinery.html" class="btn fr">Détails Machinerie</a>
+<a href="machinery.html" class="btn en">Machinery Details</a>
+<a href="crating.html" class="btn fr">Détails Caissage</a>
+<a href="crating.html" class="btn en">Crating Details</a>
+<a href="transport.html" class="btn fr">Détails Transport</a>
+<a href="transport.html" class="btn en">Transport Details</a>
 </section>
 
 <section id="contact">
-    <h1 class="fr">Contactez-nous</h1>
-    <h1 class="en">Contact Us</h1>
-    <p>Tel: 613-859-3343 | info@signaturemovingcrating.ca</p>
-    <form action="https://formspree.io/f/mgonojqp" method="POST">
-        <input type="text" name="nom" placeholder="Nom / Name" required>
-        <textarea name="message" placeholder="Votre projet / Your project" rows="4" required></textarea>
-        <button type="submit">ENVOYER / SEND</button>
-    </form>
+<h1 class="fr">Contactez-nous</h1>
+<h1 class="en">Contact Us</h1>
+<p>Tel: 613-859-3343 | info@signaturemovingcrating.ca</p>
+<form action="https://formspree.io/f/mgonojqp" method="POST">
+<input type="text" name="nom" placeholder="Nom / Name" required>
+<textarea name="message" placeholder="Votre projet / Your project" rows="4" required></textarea>
+<button type="submit">ENVOYER / SEND</button>
+</form>
 </section>
 
 <footer>
@@ -72,9 +81,10 @@
 
 <script>
 function toggleLang(){
-    document.querySelectorAll('.fr').forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
-    document.querySelectorAll('.en').forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
+document.querySelectorAll('.fr').forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
+document.querySelectorAll('.en').forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
 }
 </script>
+
 </body>
 </html>
