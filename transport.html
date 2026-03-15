@@ -3,80 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transport - Signature Moving & Crating Canada</title>
-<meta name="description" content="Transport sécurisé de pianos, coffres-forts et équipements de haute valeur à Ottawa & Gatineau.">
-<link rel="stylesheet" href="style.css">
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX');
-</script>
+<title>Transport d’Objets Sensibles - Signature Moving & Crating Canada</title>
+<meta name="description" content="Transport sécurisé de pianos, coffres et équipements de valeur à Ottawa & Gatineau.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif;}
+body{scroll-behavior:smooth;}
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 5%;z-index:1000;background:rgba(0,0,0,0.5);}
+nav .logo img{height:60px;}
+nav ul{display:flex;list-style:none;gap:25px;}
+nav ul li a{color:white;text-decoration:none;font-weight:bold;}
+nav ul li a:hover{color:#E67E22;}
+.menu-toggle{display:none;font-size:30px;color:white;cursor:pointer;}
+.hero{height:80vh;background:url('fragilehighvaluetransportation.png') center/cover no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white;position:relative;}
+.hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+.hero h1{font-size:4vw;margin-bottom:20px;color:white;}
+.hero p{font-size:1.5vw;color:white;}
+.container{padding:100px 5%;max-width:1200px;margin:auto;}
+.container h2{color:#002D58;margin-bottom:40px;}
+.container p{color:#555;margin-bottom:20px;line-height:1.6;}
+.contact{padding:100px 5%;background:#111;color:white;text-align:center;}
+.contact input,.contact textarea{width:100%;padding:15px;margin:10px 0;border-radius:5px;border:none;}
+.contact button{padding:20px;background:#E67E22;color:white;border:none;font-weight:bold;width:100%;cursor:pointer;}
+.contact button:hover{background:#002D58;}
+footer{background:#000;color:white;text-align:center;padding:40px;}
+footer a{color:#E67E22;text-decoration:none;}
+.call-button{position:fixed;bottom:20px;right:20px;background:#E67E22;color:white;font-size:30px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;text-decoration:none;z-index:999;}
+.call-button:hover{background:#002D58;}
+@media(max-width:768px){.menu-toggle{display:block;}nav ul{display:none;flex-direction:column;width:100%;text-align:center;padding:20px 0;}}
+</style>
 </head>
 <body>
 
 <nav>
-    <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="machinery.html">Machinerie</a></li>
-        <li><a href="crating.html">Caissage</a></li>
-        <li><a href="transport.html">Transport</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div onclick="toggleLang()" class="lang-switch">FR | EN</div>
+<div class="logo"><img src="1772619062185.png" alt="Logo"></div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul id="menu">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="machinery.html">Machinerie</a></li>
+<li><a href="crating.html">Caissage</a></li>
+<li><a href="transport.html">Transport</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
-<section style="background-image:url('fragilehighvaluetransportation.png');">
-    <div class="fr">
-        <h1>Transport Haute Valeur</h1>
-        <p>Transport sécurisé de pianos, coffres-forts et équipements sensibles avec rigueur et précision.</p>
-    </div>
-    <div class="en">
-        <h1>Sensitive Transportation</h1>
-        <p>Secure transportation of pianos, safes, and sensitive equipment with precision and care.</p>
-    </div>
+<section class="hero">
+<h1>Transport d’Objets Sensibles</h1>
+<p>Transport sécurisé pour pianos, coffres et équipements de valeur</p>
 </section>
 
-<section class="container">
-<h2 class="fr">Détails des services</h2>
-<h2 class="en">Service Details</h2>
-<ul class="fr">
-<li>Transport sécurisé pour objets de valeur</li>
-<li>Suivi complet et assurance incluse</li>
-<li>Équipe spécialisée et expérimentée</li>
-</ul>
-<ul class="en">
-<li>Secure transport for high-value items</li>
-<li>Full tracking and insurance included</li>
-<li>Specialized and experienced team</li>
-</ul>
-</section>
+<div class="container">
+<h2>Nos Services de Transport</h2>
+<p>Nous garantissons un transport sécurisé et planifié pour vos objets de valeur. Chaque projet est adapté à vos besoins spécifiques pour minimiser les risques et protéger vos équipements.</p>
+<p>Nous utilisons des outils spécialisés et des techniques avancées de manutention pour garantir un transport sûr.</p>
+</div>
 
-<section id="contact">
-<h1 class="fr">Contactez-nous</h1>
-<h1 class="en">Contact Us</h1>
-<p>Tel: 613-859-3343 | info@signaturemovingcrating.ca</p>
+<section class="contact" id="contact">
+<h2>Demande de Soumission</h2>
+<p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
 <form action="https://formspree.io/f/mgonojqp" method="POST">
-<input type="text" name="nom" placeholder="Nom / Name" required>
-<textarea name="message" placeholder="Votre projet / Your project" rows="4" required></textarea>
-<button type="submit">ENVOYER / SEND</button>
+<input type="text" name="nom" placeholder="Nom" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Décrivez votre projet" rows="4"></textarea>
+<button type="submit">ENVOYER</button>
 </form>
 </section>
 
 <footer>
-<p>&copy; 2026 Signature Moving & Crating Canada | Ottawa & Gatineau</p>
+<p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
+<p>📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
 </footer>
 
-<script>
-function toggleLang(){
-document.querySelectorAll('.fr').forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
-document.querySelectorAll('.en').forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
-}
-</script>
+<a href="tel:16138593343" class="call-button">📞</a>
 
+<script>
+function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
+</script>
 </body>
 </html>
