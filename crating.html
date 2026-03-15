@@ -4,42 +4,78 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Caissage Sur Mesure | Signature Moving & Crating Canada</title>
-<meta name="description" content="Fabrication de caisses sur mesure pour la protection de pianos, objets fragiles et exportation.">
+<meta name="description" content="Fabrication de caisses sur mesure pour pianos, objets fragiles et exportation.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-  <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
-  <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="machinery.html">Machinerie</a></li>
-    <li><a href="crating.html">Caissage</a></li>
-    <li><a href="transport.html">Transport</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+    <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="machinery.html">Machinerie</a></li>
+        <li><a href="crating.html">Caissage</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div onclick="toggleLang()" class="lang-switch">FR | EN</div>
 </nav>
 
-<section style="background-image:url('customcratingottawa.png'); min-height:60vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:white;">
-<h1>Caissage Sur Mesure</h1>
-<p>Protection certifiée pour pianos, objets fragiles et exportation internationale.</p>
+<section class="hero" style="background-image:url('customcratingottawa.png');">
+    <div class="fr">
+        <h1>Caissage Sur Mesure</h1>
+        <p>Protection certifiée pour pianos, objets fragiles et exportation internationale.</p>
+        <a href="#contact" class="btn">Demande de soumission</a>
+    </div>
+    <div class="en">
+        <h1>Custom Crating</h1>
+        <p>Certified protection for pianos, fragile items and international shipping.</p>
+        <a href="#contact" class="btn">Request a Quote</a>
+    </div>
 </section>
 
 <section>
 <div class="container">
-<h2>Nos Services de Caissage</h2>
-<ul>
+<h2 class="fr">Services de Caissage</h2>
+<h2 class="en">Crating Services</h2>
+<ul class="fr">
 <li>Fabrication de caisses sur mesure selon normes ISPM-15</li>
 <li>Protection pour pianos et instruments de musique</li>
 <li>Caisses pour équipements fragiles et objets de valeur</li>
 <li>Exportation sécurisée vers l’international</li>
 </ul>
-<a href="index.html#contact" class="btn">Demande de soumission</a>
+<ul class="en">
+<li>Custom crates built to ISPM-15 standards</li>
+<li>Protection for pianos and musical instruments</li>
+<li>Crates for fragile and high-value items</li>
+<li>Secure international shipping</li>
+</ul>
+<a href="index.html#contact" class="btn fr">Demande de soumission</a>
+<a href="index.html#contact" class="btn en">Request a Quote</a>
 </div>
 </section>
 
+<section id="contact">
+<h1 class="fr">Contactez-nous</h1>
+<h1 class="en">Contact Us</h1>
+<p>Tel: 613-859-3343 | info@signaturemovingcrating.ca</p>
+<form action="https://formspree.io/f/mgonojqp" method="POST">
+<input type="text" name="nom" placeholder="Nom / Name" required>
+<textarea name="message" placeholder="Votre projet / Your project" rows="4" required></textarea>
+<button type="submit">ENVOYER / SEND</button>
+</form>
+</section>
+
 <footer>
-<p>&copy; 2026 Signature Moving & Crating Canada</p>
+<p>&copy; 2026 Signature Moving & Crating Canada | Ottawa & Gatineau</p>
 </footer>
+
+<script>
+function toggleLang(){
+document.querySelectorAll('.fr').forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
+document.querySelectorAll('.en').forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
+}
+</script>
+
 </body>
 </html>
