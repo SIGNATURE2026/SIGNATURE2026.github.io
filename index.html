@@ -3,218 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signature Moving & Crating Canada | Déménagement Industriel et Caissage</title>
-<meta name="description" content="Signature Moving & Crating Canada : spécialiste en déménagement industriel, caissage sur mesure et transport d'objets fragiles à Ottawa & Gatineau.">
-<meta name="keywords" content="Déménagement industriel Ottawa, Caissage sur mesure, Transport d'objets fragiles, Machinerie lourde, Ottawa, Gatineau">
-<meta name="robots" content="index, follow">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Signature Moving & Crating Canada">
-<meta property="og:description" content="Spécialiste en déménagement industriel, caissage sur mesure et transport d'objets fragiles à Ottawa & Gatineau.">
-<meta property="og:image" content="https://www.signaturemovingcrating.ca/fragilehighvaluetransportation.png">
-<meta property="og:url" content="https://www.signaturemovingcrating.ca/">
-<meta property="og:type" content="website">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Signature Moving & Crating Canada">
-<meta name="twitter:description" content="Déménagement industriel et caissage sur mesure à Ottawa & Gatineau.">
-<meta name="twitter:image" content="https://www.signaturemovingcrating.ca/fragilehighvaluetransportation.png">
-
-<link rel="canonical" href="https://www.signaturemovingcrating.ca/">
-
-<style>
-/* Reset et base */
-*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth;}
-body{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#333;line-height:1.6;background:#f8f9fa;}
-
-/* Variables */
-:root{--primary:#002D58;--secondary:#E67E22;--dark:#1A1A1A;--white:#fff;}
-
-/* Navbar */
-nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:rgba(0,0,0,0.85);color:white;z-index:1000;transition:0.3s;}
-nav.scrolled{background:rgba(0,0,0,0.95);}
-nav .logo img{height:60px;}
-nav ul{list-style:none;display:flex;gap:25px;}
-nav ul li{cursor:pointer;font-weight:bold;transition:0.3s;}
-nav ul li:hover{color:var(--secondary);}
-.lang-switch{cursor:pointer;font-weight:bold;border:1px solid #fff;padding:5px 12px;border-radius:5px;transition:0.3s;}
-.lang-switch:hover{background:var(--secondary);border-color:var(--secondary);}
-
-/* Hero */
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background-size:cover;background-position:center;position:relative;}
-.hero::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.45);z-index:0;}
-.hero > *{position:relative;z-index:1;animation:fadeInUp 1s ease forwards;}
-@keyframes fadeInUp{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:translateY(0);}}
-h1{font-size:clamp(2em,6vw,3.5em);margin-bottom:20px;}
-p{font-size:1.2em;max-width:700px;margin:0 auto 20px;}
-.btn{padding:15px 40px;border:2px solid #fff;color:#fff;border-radius:50px;font-weight:bold;text-transform:uppercase;margin-top:20px;display:inline-block;transition:0.3s;}
-.btn:hover{background:var(--secondary);border-color:var(--secondary);transform:scale(1.05);}
-
-/* Sections */
-section{padding:100px 5%;}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin:60px 0;}
-.card{background:white;color:#333;padding:30px 20px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1);transition:transform 0.3s, box-shadow 0.3s;text-align:center;opacity:0;transform:translateY(30px);}
-.card.visible{opacity:1;transform:translateY(0);}
-.card img{border-radius:10px;margin-bottom:15px;}
-.card h3{color:var(--primary);margin-bottom:10px;}
-
-/* Testimonials */
-.testimonials{background:#f0f0f0;color:#333;padding:60px 20px;text-align:center;}
-.testimonial-item{background:white;padding:25px 30px;margin:20px auto;max-width:600px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
-.testimonial-item h4{margin-top:10px;color:var(--primary);font-weight:bold;}
-
-/* Contact */
-#contact{background:#fff;color:#000;padding:60px 5%;text-align:center;}
-#contact form{max-width:450px;margin:30px auto 0;}
-#contact input,#contact textarea{width:100%;padding:15px;margin-bottom:15px;border:1px solid #ddd;border-radius:5px;}
-#contact button{width:100%;padding:18px;border:none;background:var(--primary);color:white;font-weight:bold;border-radius:5px;cursor:pointer;transition:0.3s;}
-#contact button:hover{background:var(--dark);}
-#confirmationMessage{display:none;color:green;font-weight:bold;margin-top:15px;}
-.map-container iframe{width:100%;height:300px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.2);}
-
-/* Footer */
-footer{background:var(--dark);color:#bbb;text-align:center;padding:40px 20px;}
-
-/* Langues */
-.fr{display:block;} .en{display:none;}
-
-/* Responsive */
-@media(max-width:768px){ nav ul{flex-direction:column;gap:15px;margin-top:10px;} h1{font-size:2em;} .services{grid-template-columns:1fr;} }
-</style>
+<title>Signature Moving & Crating Canada</title>
+<meta name="description" content="Expert en manutention industrielle, caissage sur mesure et transport sécurisé à Ottawa & Gatineau.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav id="navbar">
-  <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
-  <ul>
-    <li onclick="scrollToSection('home')"><span class="fr">Accueil</span><span class="en">Home</span></li>
-    <li onclick="scrollToSection('services')"><span class="fr">Services</span><span class="en">Services</span></li>
-    <li onclick="scrollToSection('testimonials')"><span class="fr">Témoignages</span><span class="en">Testimonials</span></li>
-    <li onclick="scrollToSection('contact')"><span class="fr">Contact</span><span class="en">Contact</span></li>
-  </ul>
-  <div onclick="toggleLang()" class="lang-switch">FR | EN</div>
+<nav>
+    <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="machinery.html">Machinerie</a></li>
+        <li><a href="crating.html">Caissage</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div onclick="toggleLang()" class="lang-switch">FR | EN</div>
 </nav>
 
-<!-- Hero -->
-<section id="home" class="hero" style="background-image:url('fragilehighvaluetransportation.png');">
-  <div class="fr">
-    <h1>Signature Moving & Crating Canada</h1>
-    <p>Protection d'élite et transport de précision à Ottawa & Gatineau.</p>
-    <a href="#contact" class="btn">Soumission</a>
-  </div>
-  <div class="en">
-    <h1>Signature Moving & Crating Canada</h1>
-    <p>Elite protection and precision transport in Ottawa & Gatineau.</p>
-    <a href="#contact" class="btn">Quote</a>
-  </div>
+<section class="hero" style="background-image:url('machinerylaboratorymovers.png');">
+    <div class="fr">
+        <h1>Signature Moving & Crating Canada</h1>
+        <p>Protection d’élite et transport de précision à Ottawa & Gatineau.</p>
+        <a href="#contact" class="btn">Demande de soumission</a>
+    </div>
+    <div class="en">
+        <h1>Signature Moving & Crating Canada</h1>
+        <p>Elite protection and precision transport in Ottawa & Gatineau.</p>
+        <a href="#contact" class="btn">Request a Quote</a>
+    </div>
 </section>
 
-<!-- Services -->
-<section id="services">
-  <div class="services">
+<section class="services">
     <div class="card">
-      <img src="machinerylaboratorymovers.png" alt="Machinerie et laboratoires">
-      <h3 class="fr">Machinerie & Laboratoires</h3>
-      <h3 class="en">Machinery & Laboratory Movers</h3>
-      <p class="fr">Relocalisation sécurisée de machinerie lourde et équipements de laboratoire.</p>
-      <p class="en">Safe relocation of heavy machinery and laboratory equipment.</p>
+        <img src="machinerylaboratorymovers.png" alt="Machinerie">
+        <h3>Machinerie & Laboratoires</h3>
+        <p>Relocalisation sécurisée d’équipements industriels et laboratoires.</p>
+        <a href="machinery.html" class="btn">En savoir plus</a>
     </div>
     <div class="card">
-      <img src="customcratingottawa.png" alt="Caissage sur mesure">
-      <h3 class="fr">Caissage Sur Mesure</h3>
-      <h3 class="en">Custom Crating</h3>
-      <p class="fr">Protection certifiée pour pianos, objets fragiles et exportation.</p>
-      <p class="en">Certified protection for pianos, fragile items, and exports.</p>
+        <img src="customcratingottawa.png" alt="Caissage">
+        <h3>Caissage sur mesure</h3>
+        <p>Protection certifiée pour pianos, objets fragiles et exportation.</p>
+        <a href="crating.html" class="btn">En savoir plus</a>
     </div>
     <div class="card">
-      <img src="fragilehighvaluetransportation.png" alt="Transport sécurisé">
-      <h3 class="fr">Transport Sensible</h3>
-      <h3 class="en">Fragile & High-Value Transportation</h3>
-      <p class="fr">Logistique sécurisée pour objets de valeur et équipements sensibles.</p>
-      <p class="en">Secure logistics for high-value items and sensitive equipment.</p>
+        <img src="fragilehighvaluetransportation.png" alt="Transport Sensible">
+        <h3>Transport sensible</h3>
+        <p>Logistique sécurisée pour objets de valeur et équipements sensibles.</p>
+        <a href="transport.html" class="btn">En savoir plus</a>
     </div>
-  </div>
 </section>
 
-<!-- Testimonials -->
-<section id="testimonials" class="testimonials">
-  <h2 class="fr">Témoignages</h2>
-  <h2 class="en">Testimonials</h2>
-  <div id="testimonial-container"></div>
-</section>
-
-<!-- Contact -->
 <section id="contact">
-  <h1 class="fr">Contactez-nous</h1>
-  <h1 class="en">Contact Us</h1>
-  <p>Tel: 613-859-3343 | info@signaturemovingcrating.ca</p>
-  <form id="contactForm" action="https://formspree.io/f/mgonojqp" method="POST">
-    <input type="text" name="name" placeholder="Nom / Name" required>
-    <input type="email" name="_replyto" placeholder="Email" required>
-    <textarea name="message" placeholder="Décrivez votre projet (poids, dimensions, destination)..." rows="4" required></textarea>
-    <button type="submit">ENVOYER / SEND</button>
-    <p id="confirmationMessage">Merci ! Votre demande a été envoyée avec succès.</p>
-  </form>
-  <div class="map-container" style="margin-top:30px;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen="" loading="lazy"></iframe>
-  </div>
+    <h1 class="fr">Contactez-nous</h1>
+    <h1 class="en">Contact Us</h1>
+    <p>Tel: 613-859-3343 | info@signaturemovingcrating.ca</p>
+    <form action="https://formspree.io/f/mgonojqp" method="POST">
+        <input type="text" name="nom" placeholder="Nom / Name" required>
+        <textarea name="message" placeholder="Votre projet / Your project" rows="4" required></textarea>
+        <button type="submit">ENVOYER / SEND</button>
+    </form>
 </section>
 
-<!-- Footer -->
 <footer>
-  <p>&copy; 2026 Signature Moving & Crating Canada | Ottawa & Gatineau, QC</p>
+<p>&copy; 2026 Signature Moving & Crating Canada | Ottawa & Gatineau</p>
 </footer>
 
 <script>
-// Smooth scroll
-function scrollToSection(id){ document.getElementById(id).scrollIntoView({behavior:'smooth'}); }
-// FR/EN toggle
 function toggleLang(){
-  const fr=document.querySelectorAll('.fr'); const en=document.querySelectorAll('.en');
-  fr.forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
-  en.forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
+    document.querySelectorAll('.fr').forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
+    document.querySelectorAll('.en').forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
 }
-
-// Animate cards on scroll
-const cards=document.querySelectorAll('.card');
-function animateCards(){
-  const triggerBottom=window.innerHeight*0.85;
-  cards.forEach(card=>{
-    const cardTop=card.getBoundingClientRect().top;
-    if(cardTop<triggerBottom){card.classList.add('visible');}
-  });
-}
-window.addEventListener('scroll',animateCards);
-animateCards();
-
-// Testimonials
-const testimonials=[
-  {fr:"Ils ont déplacé nos machines de laboratoire en toute sécurité.", en:"They moved our lab machines safely.", author:"John D., Ottawa"},
-  {fr:"Le caissage sur mesure était parfait.", en:"The custom crating was perfect.", author:"Marie L., Gatineau"},
-  {fr:"Transport sécurisé et rapide de nos pianos.", en:"Secure and fast transport of our pianos.", author:"Alex R., Ottawa"}
-];
-function displayTestimonials(){
-  const container=document.getElementById('testimonial-container');
-  container.innerHTML='';
-  testimonials.forEach(t=>{
-    const div=document.createElement('div');
-    div.className='testimonial-item';
-    div.innerHTML=`<p class="fr">${t.fr}</p><p class="en">${t.en}</p><h4>${t.author}</h4>`;
-    container.appendChild(div);
-  });
-}
-displayTestimonials();
-
-// Confirmation formulaire
-document.getElementById('contactForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  const form=this;
-  fetch(form.action,{method:'POST',body:new FormData(form)}).then(()=>{
-    document.getElementById('confirmationMessage').style.display='block';
-    form.reset();
-  });
-});
 </script>
 </body>
 </html>
