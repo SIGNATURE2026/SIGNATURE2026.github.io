@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Transport - Signature Moving & Crating Canada</title>
-<meta name="description" content="Transport sécurisé de pianos, coffres et équipements de valeur à Ottawa et Gatineau.">
+<meta name="description" content="Transport sécurisé de pianos, coffres et équipements de haute valeur à Ottawa & Gatineau.">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif;}
 body{scroll-behavior:smooth;}
@@ -14,7 +14,6 @@ nav ul{display:flex;list-style:none;gap:25px;}
 nav ul li a{color:white;text-decoration:none;font-weight:bold;}
 nav ul li a:hover{color:#E67E22;}
 .menu-toggle{display:none;font-size:30px;color:white;cursor:pointer;}
-.lang-switch{cursor:pointer;color:white;font-weight:bold;border:1px solid #fff;padding:5px 10px;border-radius:5px;}
 .hero{height:60vh;background:url('fragilehighvaluetransportation.png') center/cover no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white;position:relative;}
 .hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);}
 .hero h1,.hero p{position:relative;z-index:2;text-shadow:2px 2px 4px rgba(0,0,0,0.5);}
@@ -33,8 +32,6 @@ footer{background:#000;color:white;text-align:center;padding:40px;}
 footer a{color:#E67E22;text-decoration:none;}
 .call-button{position:fixed;bottom:20px;right:20px;background:#E67E22;color:white;font-size:30px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;text-decoration:none;z-index:999;}
 @media(max-width:768px){.menu-toggle{display:block;}nav ul{display:none;flex-direction:column;width:100%;text-align:center;padding:20px 0;}}
-.fr{display:block;}
-.en{display:none;}
 </style>
 </head>
 <body>
@@ -43,43 +40,28 @@ footer a{color:#E67E22;text-decoration:none;}
 <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 <ul id="menu">
-<li><a href="index.html" class="fr">Accueil</a><a href="index.html" class="en">Home</a></li>
-<li><a href="machinery.html" class="fr">Machinerie</a><a href="machinery.html" class="en">Machinery</a></li>
-<li><a href="crating.html" class="fr">Caissage</a><a href="crating.html" class="en">Crating</a></li>
-<li><a href="transport.html" class="fr">Transport</a><a href="transport.html" class="en">Transport</a></li>
-<li><a href="#contact" class="fr">Contact</a><a href="#contact" class="en">Contact</a></li>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="machinery.html">Machinerie</a></li>
+<li><a href="crating.html">Caissage</a></li>
+<li><a href="transport.html">Transport</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="index-en.html">EN</a></li>
 </ul>
-<div class="lang-switch" onclick="toggleLang()">FR | EN</div>
 </nav>
 
 <section class="hero">
-<div class="fr">
-<h1>Transport d'Objets Sensibles</h1>
-<p>Transport sécurisé de pianos, coffres et équipements de valeur</p>
+<h1>Transport</h1>
+<p>Transport sécurisé de pianos, coffres et équipements de haute valeur.</p>
 <a href="#contact" class="btn">Demande de Soumission</a>
-</div>
-<div class="en">
-<h1>Sensitive Transportation</h1>
-<p>Secure transport of pianos, safes, and high-value equipment</p>
-<a href="#contact" class="btn">Request a Quote</a>
-</div>
 </section>
 
 <div class="content">
-<div class="fr">
-<h2>Détails du Service de Transport</h2>
-<p>Nous offrons un transport spécialisé pour vos objets sensibles nécessitant une manipulation et un calage précis.</p>
-<p>Nos experts s’assurent que chaque transport est effectué en toute sécurité, avec assurance complète et suivi professionnel.</p>
-</div>
-<div class="en">
-<h2>Sensitive Transport Service Details</h2>
-<p>We provide specialized transport for your sensitive items requiring careful handling and crating.</p>
-<p>Our team ensures every shipment is secure, fully insured, and professionally monitored from pickup to delivery.</p>
-</div>
+<h2>Détails du Service</h2>
+<p>Nous assurons le transport sécurisé de vos objets de grande valeur, y compris pianos, coffres-forts, œuvres d’art et équipements sensibles. Chaque expédition est suivie et assurée.</p>
+<p>Notre équipe utilise des techniques spécialisées pour protéger vos biens, garantissant un transport sans dommage.</p>
 </div>
 
 <section class="contact" id="contact">
-<div class="fr">
 <h2>Demande de Soumission</h2>
 <p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
 <form action="https://formspree.io/f/mgonojqp" method="POST">
@@ -88,31 +70,17 @@ footer a{color:#E67E22;text-decoration:none;}
 <textarea name="message" placeholder="Décrivez votre projet" rows="4"></textarea>
 <button type="submit">ENVOYER</button>
 </form>
-</div>
-<div class="en">
-<h2>Request a Quote</h2>
-<p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
-<form action="https://formspree.io/f/mgonojqp" method="POST">
-<input type="text" name="name" placeholder="Name" required>
-<input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Describe your project" rows="4"></textarea>
-<button type="submit">SEND</button>
-</form>
-</div>
 </section>
 
 <footer>
-<p class="fr">Signature Moving & Crating Canada | Ottawa & Gatineau</p>
-<p class="en">Signature Moving & Crating Canada | Ottawa & Gatineau</p>
-<p class="fr">📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
-<p class="en">📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
+<p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
+<p>📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
 </footer>
 
 <a href="tel:16138593343" class="call-button">📞</a>
 
 <script>
 function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
-function toggleLang(){const fr=document.querySelectorAll('.fr');const en=document.querySelectorAll('.en');fr.forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));en.forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));}
 </script>
 
 </body>
