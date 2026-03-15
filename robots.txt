@@ -1,8 +1,6 @@
 # Autoriser tous les robots à explorer le site
 User-agent: *
-Disallow: /cgi-bin/
-Disallow: /tmp/
 Disallow: /private/
+Allow: /
 
-# Sitemap à utiliser
 Sitemap: https://www.signaturemovingcrating.ca/sitemap.xml
