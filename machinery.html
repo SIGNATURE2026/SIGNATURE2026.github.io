@@ -4,61 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Machinerie - Signature Moving & Crating Canada</title>
-<meta name="description" content="Déménagement industriel et relocation d'équipements à Ottawa & Gatineau.">
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif;}
-body{scroll-behavior:smooth;}
-nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 5%;z-index:1000;background:rgba(0,0,0,0.5);}
-nav .logo img{height:60px;}
-nav ul{display:flex;list-style:none;gap:25px;}
-nav ul li a{color:white;text-decoration:none;font-weight:bold;}
-nav ul li a:hover{color:#E67E22;}
-.menu-toggle{display:none;font-size:30px;color:white;cursor:pointer;}
-.hero{height:60vh;background:url('machinerylaboratorymovers.png') center/cover no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white;position:relative;}
-.hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);}
-.hero h1,.hero p{position:relative;z-index:2;text-shadow:2px 2px 4px rgba(0,0,0,0.5);}
-.hero h1{font-size:4vw;margin-bottom:20px;color:#E67E22;}
-.hero p{font-size:1.5vw;color:#F8F9FA;}
-.btn{padding:12px 25px;background:#E67E22;color:white;text-decoration:none;border-radius:30px;font-weight:bold;margin-top:20px;display:inline-block;transition:0.3s;}
-.btn:hover{background:#002D58;}
-.content{padding:50px 5%;max-width:1000px;margin:auto;}
-.content h2{color:#002D58;margin-bottom:20px;}
-.content p{margin-bottom:20px;line-height:1.6;color:#555;}
-.contact{padding:50px 5%;background:#111;color:white;text-align:center;}
-.contact input,.contact textarea{width:100%;padding:15px;margin:10px 0;border-radius:5px;border:none;}
-.contact button{padding:20px;background:#E67E22;color:white;border:none;font-weight:bold;width:100%;cursor:pointer;}
-.contact button:hover{background:#002D58;}
-footer{background:#000;color:white;text-align:center;padding:40px;}
-footer a{color:#E67E22;text-decoration:none;}
-.call-button{position:fixed;bottom:20px;right:20px;background:#E67E22;color:white;font-size:30px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;text-decoration:none;z-index:999;}
-@media(max-width:768px){.menu-toggle{display:block;}nav ul{display:none;flex-direction:column;width:100%;text-align:center;padding:20px 0;}}
-</style>
+<meta name="description" content="Déménagement industriel et transport de machines et laboratoires à Ottawa et Gatineau.">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <nav>
-<div class="logo"><img src="1772619062185.png" alt="Logo"></div>
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-<ul id="menu">
-<li><a href="index.html">Accueil</a></li>
-<li><a href="machinery.html">Machinerie</a></li>
-<li><a href="crating.html">Caissage</a></li>
-<li><a href="transport.html">Transport</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="index-en.html">EN</a></li>
-</ul>
+  <div class="logo"><img src="assets/images/1772619062185.png" alt="Logo"></div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul id="menu">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="machinery.html">Machinerie</a></li>
+    <li><a href="crating.html">Caissage</a></li>
+    <li><a href="transport.html">Transport</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="machinery-en.html">EN</a></li>
+  </ul>
 </nav>
 
-<section class="hero">
-<h1>Machinerie</h1>
-<p>Déménagement industriel et relocation d'équipements à Ottawa & Gatineau.</p>
-<a href="#contact" class="btn">Demande de Soumission</a>
+<section class="hero" style="background-image:url('assets/images/machinerylaboratorymovers.png');">
+  <h1>Machinerie</h1>
+  <p>Déménagement industriel & transport de laboratoires et machines.</p>
+  <a href="#contact" class="btn">Demande de Soumission</a>
 </section>
 
 <div class="content">
 <h2>Détails du Service</h2>
-<p>Nous assurons la relocalisation sécurisée de machinerie industrielle, laboratoires et équipements spécialisés. Chaque projet est planifié pour un transport sûr et efficace.</p>
-<p>Notre équipe expérimentée garantit que votre matériel arrive intact, en respectant toutes les normes de sécurité.</p>
+<p>Nous assurons le déménagement industriel, le transport de laboratoires et d’équipements lourds en toute sécurité.</p>
+<p>Notre équipe spécialisée garantit la protection de vos machines et équipements pendant tout le processus.</p>
 </div>
 
 <section class="contact" id="contact">
@@ -67,7 +40,7 @@ footer a{color:#E67E22;text-decoration:none;}
 <form action="https://formspree.io/f/mgonojqp" method="POST">
 <input type="text" name="nom" placeholder="Nom" required>
 <input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Décrivez votre projet" rows="4"></textarea>
+<textarea name="message" placeholder="Votre projet" rows="4"></textarea>
 <button type="submit">ENVOYER</button>
 </form>
 </section>
