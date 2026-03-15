@@ -1,66 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Machinery - Signature Moving & Crating Canada</title>
-<meta name="description" content="Secure transport and handling of machinery and laboratories.">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<title>Machinery Moving | Signature Moving & Crating</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 <style>
-/* Styles identiques à index-en.html */
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Roboto}
+
+body{background:black;color:white}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+}
+
+.logo img{height:50px}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:90vh;
+background:url("machinerylaboratorymovers.png") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.section{
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+footer{
+padding:40px;
+text-align:center;
+}
+
 </style>
+
 </head>
+
 <body>
-<nav id="navbar">
-<div class="logo"><img src="1772619062185.png" alt="Logo"></div>
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-<ul id="menu">
+
+<nav>
+
+<div class="logo">
+<img src="1772619062185.png">
+</div>
+
+<ul>
+
 <li><a href="index-en.html">Home</a></li>
-<li><a href="machinery-en.html">Machinery</a></li>
 <li><a href="crating-en.html">Crating</a></li>
 <li><a href="transport-en.html">Transport</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="machinery.html">FR</a></li>
+
 </ul>
+
 </nav>
 
-<section class="hero" style="background-image:url('machinerylaboratorymovers.png');">
+<section class="hero">
+
 <h1>Machinery Moving</h1>
-<p>Professional handling of sensitive machines and laboratories.</p>
-<a href="#contact" class="btn">Request a Quote</a>
+
+<p>
+Professional relocation of industrial machinery
+and laboratory equipment.
+</p>
+
 </section>
 
-<section class="content">
-<h2>Service Details</h2>
-<p>We provide relocation, handling and secure transport of industrial machines and laboratory equipment.</p>
-</section>
+<section class="section">
 
-<section class="contact" id="contact">
-<h2>Contact Us</h2>
-<p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
-<form id="contactForm" action="https://formspree.io/f/mgonojqp" method="POST">
-<input type="text" name="name" placeholder="Name" required>
-<input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Your project" rows="4"></textarea>
-<button type="submit">SEND</button>
-</form>
-<p id="confirmation" style="display:none;color:#ff0000;margin-top:10px;font-weight:bold;">Thank you! We received your message.</p>
+<h2>Professional service</h2>
+
+<br>
+
+<p>
+
+Signature Moving & Crating Canada specializes
+in transporting heavy machinery and delicate
+laboratory equipment.
+
+Our experienced team ensures safe and efficient handling.
+
+</p>
+
 </section>
 
 <footer>
-<p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
-<p>📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
+
+<p>Signature Moving & Crating Canada</p>
+
+<p>📞 613-859-3343</p>
+
+<p>info@signaturemovingcrating.ca</p>
+
 </footer>
 
-<a href="tel:16138593343" class="call-button">📞</a>
-
-<script>
-function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
-window.addEventListener('scroll', function(){document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);});
-const sections=document.querySelectorAll('.hero,.content,.contact');
-const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');}})},{threshold:0.2});
-sections.forEach(section=>observer.observe(section));
-document.getElementById('contactForm').addEventListener('submit', function(e){setTimeout(()=>{document.getElementById('confirmation').style.display='block';},500);});
-</script>
 </body>
 </html>
