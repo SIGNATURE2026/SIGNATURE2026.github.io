@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accueil - Signature Moving & Crating Canada</title>
+<title>Signature Moving & Crating Canada</title>
 <meta name="description" content="Machinery Movers, Custom Crating, and Sensitive Transportation in Ottawa & Gatineau.">
 <style>
 /* RESET */
@@ -17,6 +17,9 @@ nav ul{display:flex;list-style:none;gap:25px;}
 nav ul li a{color:white;text-decoration:none;font-weight:bold;}
 nav ul li a:hover{color:#E67E22;}
 .menu-toggle{display:none;font-size:30px;color:white;cursor:pointer;}
+
+/* LANGUE */
+.lang-switch{cursor:pointer;color:white;font-weight:bold;border:1px solid #fff;padding:5px 10px;border-radius:5px;}
 
 /* HERO */
 .hero{height:80vh;background:url('machinerylaboratorymovers.png') center/cover no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white;position:relative;}
@@ -57,6 +60,10 @@ footer a{color:#E67E22;text-decoration:none;}
   .menu-toggle{display:block;}
   nav ul{display:none;flex-direction:column;width:100%;text-align:center;padding:20px 0;}
 }
+
+/* LANGUES */
+.fr{display:block;}
+.en{display:none;}
 </style>
 </head>
 <body>
@@ -65,45 +72,79 @@ footer a{color:#E67E22;text-decoration:none;}
 <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 <ul id="menu">
-<li><a href="#home">Accueil</a></li>
-<li><a href="machinery.html">Machinerie</a></li>
-<li><a href="crating.html">Caissage</a></li>
-<li><a href="transport.html">Transport</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="#home" class="fr">Accueil</a><a href="#home" class="en">Home</a></li>
+<li><a href="machinery.html" class="fr">Machinerie</a><a href="machinery.html" class="en">Machinery</a></li>
+<li><a href="crating.html" class="fr">Caissage</a><a href="crating.html" class="en">Crating</a></li>
+<li><a href="transport.html" class="fr">Transport</a><a href="transport.html" class="en">Transport</a></li>
+<li><a href="#contact" class="fr">Contact</a><a href="#contact" class="en">Contact</a></li>
 </ul>
+<div class="lang-switch" onclick="toggleLang()">FR | EN</div>
 </nav>
 
 <section class="hero" id="home">
+<div class="fr">
 <h1>Signature Moving & Crating Canada</h1>
 <p>Protection d'élite et transport de précision</p>
 <a href="#contact" class="btn">Demande de Soumission</a>
+</div>
+<div class="en">
+<h1>Signature Moving & Crating Canada</h1>
+<p>Elite protection and precision transport</p>
+<a href="#contact" class="btn">Request a Quote</a>
+</div>
 </section>
 
 <section class="services" id="services">
+<div class="fr">
 <h2>Nos Services</h2>
 <div class="services-grid">
 <div class="service-card">
-<img src="machinerylaboratorymovers.png" alt="Machinery & Laboratory Movers">
+<img src="machinerylaboratorymovers.png" alt="Machinerie & Laboratoire">
 <h3>Machinerie & Laboratoire</h3>
 <p>Déménagement industriel de machinerie et laboratoires.</p>
 <a href="machinery.html" class="btn">En savoir plus</a>
 </div>
 <div class="service-card">
-<img src="customcratingottawa.png" alt="Custom Crating">
+<img src="customcratingottawa.png" alt="Caissage sur mesure">
 <h3>Caissage sur Mesure</h3>
 <p>Fabrication professionnelle de caisses pour exportation et objets fragiles.</p>
 <a href="crating.html" class="btn">En savoir plus</a>
 </div>
 <div class="service-card">
-<img src="fragilehighvaluetransportation.png" alt="Sensitive Transportation">
+<img src="fragilehighvaluetransportation.png" alt="Transport d'objets sensibles">
 <h3>Transport d'Objets Sensibles</h3>
 <p>Transport sécurisé de pianos, coffres et équipements de valeur.</p>
 <a href="transport.html" class="btn">En savoir plus</a>
 </div>
 </div>
+</div>
+<div class="en">
+<h2>Our Services</h2>
+<div class="services-grid">
+<div class="service-card">
+<img src="machinerylaboratorymovers.png" alt="Machinery & Laboratory">
+<h3>Machinery & Laboratory</h3>
+<p>Industrial relocation of machinery and laboratories.</p>
+<a href="machinery.html" class="btn">Learn More</a>
+</div>
+<div class="service-card">
+<img src="customcratingottawa.png" alt="Custom Crating">
+<h3>Custom Crating</h3>
+<p>Professional crates for export and fragile items.</p>
+<a href="crating.html" class="btn">Learn More</a>
+</div>
+<div class="service-card">
+<img src="fragilehighvaluetransportation.png" alt="Sensitive Transportation">
+<h3>Sensitive Transportation</h3>
+<p>Secure transport of pianos, safes and high-value equipment.</p>
+<a href="transport.html" class="btn">Learn More</a>
+</div>
+</div>
+</div>
 </section>
 
 <section class="contact" id="contact">
+<div class="fr">
 <h2>Demande de Soumission</h2>
 <p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
 <form action="https://formspree.io/f/mgonojqp" method="POST">
@@ -112,19 +153,40 @@ footer a{color:#E67E22;text-decoration:none;}
 <textarea name="message" placeholder="Décrivez votre projet" rows="4"></textarea>
 <button type="submit">ENVOYER</button>
 </form>
+</div>
+<div class="en">
+<h2>Request a Quote</h2>
+<p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
+<form action="https://formspree.io/f/mgonojqp" method="POST">
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Describe your project" rows="4"></textarea>
+<button type="submit">SEND</button>
+</form>
+</div>
 </section>
 
 <footer>
-<p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
-<p>📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
+<p class="fr">Signature Moving & Crating Canada | Ottawa & Gatineau</p>
+<p class="en">Signature Moving & Crating Canada | Ottawa & Gatineau</p>
+<p class="fr">📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
+<p class="en">📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
 </footer>
 
 <a href="tel:16138593343" class="call-button">📞</a>
 
 <script>
+/* Toggle menu mobile */
 function toggleMenu(){
   var menu=document.getElementById("menu");
   menu.style.display=(menu.style.display==="flex"?"none":"flex");
+}
+/* Toggle FR/EN */
+function toggleLang(){
+  const fr=document.querySelectorAll('.fr');
+  const en=document.querySelectorAll('.en');
+  fr.forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
+  en.forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
 }
 </script>
 
