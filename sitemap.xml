@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Page d'accueil -->
   <url>
     <loc>https://www.signaturemovingcrating.ca/</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <priority>1.00</priority>
   </url>
+
+  <!-- Page Machinerie -->
   <url>
     <loc>https://www.signaturemovingcrating.ca/machinery.html</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <priority>0.9</priority>
   </url>
+
+  <!-- Page Caissage / Crating -->
   <url>
     <loc>https://www.signaturemovingcrating.ca/crating.html</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <priority>0.9</priority>
   </url>
+
+  <!-- Page Transport -->
   <url>
     <loc>https://www.signaturemovingcrating.ca/transport.html</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <priority>0.9</priority>
   </url>
 </urlset>
