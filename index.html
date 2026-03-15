@@ -9,16 +9,25 @@
 /* RESET */
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif;}
 body{scroll-behavior:smooth;}
+
+/* NAVIGATION */
 nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 5%;z-index:1000;background:rgba(0,0,0,0.5);}
 nav .logo img{height:60px;}
 nav ul{display:flex;list-style:none;gap:25px;}
 nav ul li a{color:white;text-decoration:none;font-weight:bold;}
 nav ul li a:hover{color:#E67E22;}
 .menu-toggle{display:none;font-size:30px;color:white;cursor:pointer;}
+
+/* HERO */
 .hero{height:80vh;background:url('machinerylaboratorymovers.png') center/cover no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white;position:relative;}
-.hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
-.hero h1{font-size:4vw;margin-bottom:20px;color:white;}
-.hero p{font-size:1.5vw;color:white;}
+.hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);}
+.hero h1, .hero p{position:relative; z-index:2; text-shadow:2px 2px 4px rgba(0,0,0,0.5);}
+.hero h1{font-size:4vw;margin-bottom:20px;color:#E67E22;}
+.hero p{font-size:1.5vw;color:#F8F9FA;}
+.btn{padding:12px 25px;background:#E67E22;color:white;text-decoration:none;border-radius:30px;font-weight:bold;margin-top:20px;display:inline-block;transition:0.3s;}
+.btn:hover{background:#002D58;}
+
+/* SERVICES */
 .services{padding:100px 5%;text-align:center;background:#f5f5f5;}
 .services h2{color:#002D58;margin-bottom:60px;}
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;max-width:1200px;margin:auto;}
@@ -26,16 +35,28 @@ nav ul li a:hover{color:#E67E22;}
 .service-card:hover{transform:translateY(-10px);}
 .service-card img{width:100%;height:220px;object-fit:cover;}
 .service-card h3{margin:20px;color:#002D58;}
-.service-card p{padding:0 20px 20px;color:#555;line-height:1.5;}
+.service-card p{padding:0 20px 10px;color:#555;line-height:1.5;}
+.service-card a.btn{margin-bottom:20px;}
+
+/* CONTACT FORM */
 .contact{padding:100px 5%;background:#111;color:white;text-align:center;}
 .contact input,.contact textarea{width:100%;padding:15px;margin:10px 0;border-radius:5px;border:none;}
 .contact button{padding:20px;background:#E67E22;color:white;border:none;font-weight:bold;width:100%;cursor:pointer;}
 .contact button:hover{background:#002D58;}
+
+/* FOOTER */
 footer{background:#000;color:white;text-align:center;padding:40px;}
 footer a{color:#E67E22;text-decoration:none;}
+
+/* CALL BUTTON */
 .call-button{position:fixed;bottom:20px;right:20px;background:#E67E22;color:white;font-size:30px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;text-decoration:none;z-index:999;}
 .call-button:hover{background:#002D58;}
-@media(max-width:768px){.menu-toggle{display:block;}nav ul{display:none;flex-direction:column;width:100%;text-align:center;padding:20px 0;}}
+
+/* MEDIA */
+@media(max-width:768px){
+  .menu-toggle{display:block;}
+  nav ul{display:none;flex-direction:column;width:100%;text-align:center;padding:20px 0;}
+}
 </style>
 </head>
 <body>
@@ -45,7 +66,9 @@ footer a{color:#E67E22;text-decoration:none;}
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 <ul id="menu">
 <li><a href="#home">Accueil</a></li>
-<li><a href="#services">Services</a></li>
+<li><a href="machinery.html">Machinerie</a></li>
+<li><a href="crating.html">Caissage</a></li>
+<li><a href="transport.html">Transport</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
@@ -63,16 +86,19 @@ footer a{color:#E67E22;text-decoration:none;}
 <img src="machinerylaboratorymovers.png" alt="Machinery & Laboratory Movers">
 <h3>Machinerie & Laboratoire</h3>
 <p>Déménagement industriel de machinerie et laboratoires.</p>
+<a href="machinery.html" class="btn">En savoir plus</a>
 </div>
 <div class="service-card">
 <img src="customcratingottawa.png" alt="Custom Crating">
 <h3>Caissage sur Mesure</h3>
 <p>Fabrication professionnelle de caisses pour exportation et objets fragiles.</p>
+<a href="crating.html" class="btn">En savoir plus</a>
 </div>
 <div class="service-card">
 <img src="fragilehighvaluetransportation.png" alt="Sensitive Transportation">
 <h3>Transport d'Objets Sensibles</h3>
 <p>Transport sécurisé de pianos, coffres et équipements de valeur.</p>
+<a href="transport.html" class="btn">En savoir plus</a>
 </div>
 </div>
 </section>
@@ -96,7 +122,10 @@ footer a{color:#E67E22;text-decoration:none;}
 <a href="tel:16138593343" class="call-button">📞</a>
 
 <script>
-function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
+function toggleMenu(){
+  var menu=document.getElementById("menu");
+  menu.style.display=(menu.style.display==="flex"?"none":"flex");
+}
 </script>
 
 </body>
