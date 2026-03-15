@@ -2,50 +2,52 @@
 <html lang="fr"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signature Moving | Logistique Industrielle Ottawa</title>
+<title>Signature Moving | Ottawa</title>
 <style>
-    body { margin:0; font-family:'Helvetica Neue', Arial; background:#000; color:#fff; scroll-behavior:smooth; }
-    nav { position:fixed; width:100%; display:flex; justify-content:space-between; padding:20px 5%; z-index:100; background:rgba(0,0,0,0.8); }
+    body { margin:0; font-family:Arial, sans-serif; background:#000; color:#fff; scroll-behavior:smooth; }
+    nav { position:fixed; width:100%; display:flex; justify-content:space-between; padding:15px 5%; z-index:100; background:rgba(0,0,0,0.9); align-items:center; }
+    .logo img { height:40px; }
     .nav-links a { color:#fff; text-decoration:none; margin-left:15px; font-size:0.7em; text-transform:uppercase; font-weight:bold; }
-    section { height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; background-size:cover; background-position:center; padding:0 10%; }
+    section { height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; background-size:cover; background-position:center; padding:0 5%; background-blend-mode:multiply; background-color:rgba(0,0,0,0.5); }
     h2 { font-size:2.5em; margin-bottom:10px; }
     .price { font-size:1.5em; color:#ffcc00; margin-bottom:20px; font-weight:bold; }
-    .btn { padding:15px 40px; border:2px solid #fff; color:#fff; text-decoration:none; border-radius:50px; text-transform:uppercase; font-weight:bold; }
+    .btn { padding:15px 40px; border:2px solid #fff; color:#fff; text-decoration:none; border-radius:50px; font-weight:bold; }
     #contact { background:#fff; color:#000; height:auto; padding:50px 0; }
 </style></head>
 <body>
 
 <nav>
-    <div class="logo"><img src="1000278626.png" style="height:40px;"></div>
+    <div class="logo"><img src="1772619062185.png"></div>
     <div class="nav-links">
         <a href="#home">Accueil</a><a href="#machinery">Machinerie</a><a href="#crating">Caissage</a><a href="#transport">Transport</a><a href="#contact">Contact</a>
     </div>
 </nav>
 
-<section id="home" style="background-image:url('1000278633.jpg');">
-    <h1>Signature Moving Ottawa</h1>
-    <p>Le spécialiste de la logistique industrielle et objets de valeur.</p>
-    <a href="#contact" class="btn">Demander un tarif</a>
+<section id="home" style="background-image:url('file_00000000470071fb80ba42912053feb8.png');">
+    <h1>Signature Moving</h1>
+    <p>Protection d'élite et transport de précision à Ottawa.</p>
+    <a href="#contact" class="btn">Soumission</a>
 </section>
 
-<section id="machinery" style="background-image:url('1773534624398.jpeg');">
-    <h2>Machinerie & Usines</h2>
-    <div class="price">À partir de 150$/h</div>
+<section id="machinery" style="background-image:url('file_00000000c7ac71fbba467e1bc7301b61.png');">
+    <h2>Machinerie</h2>
+    <div class="price">Dès 150$/h</div>
 </section>
 
-<section id="crating" style="background-image:url('1773534660010.jpeg');">
+<section id="crating" style="background-image:url('file_000000008c1071fb8f4445318feb4fcd.png');">
     <h2>Caissage (Crating)</h2>
     <div class="price">Sur mesure</div>
 </section>
 
-<section id="transport" style="background-image:url('1773534785196.jpeg');">
-    <h2>Transport Sécurisé</h2>
-    <div class="price">Soumission personnalisée</div>
-</section>
-
 <section id="contact">
     <h2>Contactez-nous</h2>
-    <p>Tel : 613-859-3343 | info@signaturemovingcrating.ca</p>
+    <p>Téléphone : 613-859-3343</p>
+    <p>E-mail : info@signaturemovingcrating.ca</p>
+    <form action="https://formspree.io/f/mgonojqp" method="POST" style="width:300px;">
+        <input type="text" name="nom" placeholder="Nom" required style="width:100%; padding:10px; margin-bottom:10px;">
+        <textarea name="message" placeholder="Votre projet" rows="4" style="width:100%; padding:10px;"></textarea>
+        <button type="submit" style="width:100%; padding:15px; background:#000; color:#fff; border:none; margin-top:10px;">ENVOYER</button>
+    </form>
 </section>
 
 </body></html>
