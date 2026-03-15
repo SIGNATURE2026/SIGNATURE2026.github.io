@@ -3,67 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signature Moving & Crating Canada</title>
-<meta name="description" content="Machinery Movers, Custom Crating, and Sensitive Transportation in Ottawa & Gatineau.">
+<title>Signature Moving & Crating Canada | Accueil</title>
+<meta name="description" content="Protection d'élite et transport de précision à Ottawa & Gatineau.">
 <style>
-/* RESET */
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif;}
 body{scroll-behavior:smooth;}
-
-/* NAVIGATION */
 nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 5%;z-index:1000;background:rgba(0,0,0,0.5);}
 nav .logo img{height:60px;}
 nav ul{display:flex;list-style:none;gap:25px;}
 nav ul li a{color:white;text-decoration:none;font-weight:bold;}
 nav ul li a:hover{color:#E67E22;}
 .menu-toggle{display:none;font-size:30px;color:white;cursor:pointer;}
-
-/* LANGUE */
-.lang-switch{cursor:pointer;color:white;font-weight:bold;border:1px solid #fff;padding:5px 10px;border-radius:5px;}
-
-/* HERO */
 .hero{height:80vh;background:url('machinerylaboratorymovers.png') center/cover no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white;position:relative;}
 .hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);}
-.hero h1, .hero p{position:relative; z-index:2; text-shadow:2px 2px 4px rgba(0,0,0,0.5);}
+.hero h1,.hero p{position:relative;z-index:2;text-shadow:2px 2px 4px rgba(0,0,0,0.5);}
 .hero h1{font-size:4vw;margin-bottom:20px;color:#E67E22;}
 .hero p{font-size:1.5vw;color:#F8F9FA;}
 .btn{padding:12px 25px;background:#E67E22;color:white;text-decoration:none;border-radius:30px;font-weight:bold;margin-top:20px;display:inline-block;transition:0.3s;}
 .btn:hover{background:#002D58;}
-
-/* SERVICES */
-.services{padding:100px 5%;text-align:center;background:#f5f5f5;}
-.services h2{color:#002D58;margin-bottom:60px;}
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;max-width:1200px;margin:auto;}
-.service-card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:0.3s;}
-.service-card:hover{transform:translateY(-10px);}
-.service-card img{width:100%;height:220px;object-fit:cover;}
-.service-card h3{margin:20px;color:#002D58;}
-.service-card p{padding:0 20px 10px;color:#555;line-height:1.5;}
-.service-card a.btn{margin-bottom:20px;}
-
-/* CONTACT FORM */
-.contact{padding:100px 5%;background:#111;color:white;text-align:center;}
+.services{padding:50px 5%;display:flex;flex-wrap:wrap;gap:30px;justify-content:center;}
+.card{background:white;color:#000;padding:30px;border-radius:10px;flex:1 1 300px;max-width:350px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:0.3s;}
+.card:hover{transform:translateY(-10px);box-shadow:0 12px 30px rgba(0,0,0,0.15);}
+.card img{width:100%;border-radius:10px;margin-bottom:15px;}
+.card h3{color:#002D58;margin-bottom:10px;}
+.card p{color:#555;line-height:1.5;}
+.contact{padding:50px 5%;background:#111;color:white;text-align:center;}
 .contact input,.contact textarea{width:100%;padding:15px;margin:10px 0;border-radius:5px;border:none;}
 .contact button{padding:20px;background:#E67E22;color:white;border:none;font-weight:bold;width:100%;cursor:pointer;}
 .contact button:hover{background:#002D58;}
-
-/* FOOTER */
 footer{background:#000;color:white;text-align:center;padding:40px;}
 footer a{color:#E67E22;text-decoration:none;}
-
-/* CALL BUTTON */
 .call-button{position:fixed;bottom:20px;right:20px;background:#E67E22;color:white;font-size:30px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;text-decoration:none;z-index:999;}
-.call-button:hover{background:#002D58;}
-
-/* MEDIA */
-@media(max-width:768px){
-  .menu-toggle{display:block;}
-  nav ul{display:none;flex-direction:column;width:100%;text-align:center;padding:20px 0;}
-}
-
-/* LANGUES */
-.fr{display:block;}
-.en{display:none;}
+@media(max-width:768px){.menu-toggle{display:block;}nav ul{display:none;flex-direction:column;width:100%;text-align:center;padding:20px 0;}}
 </style>
 </head>
 <body>
@@ -72,79 +43,43 @@ footer a{color:#E67E22;text-decoration:none;}
 <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 <ul id="menu">
-<li><a href="#home" class="fr">Accueil</a><a href="#home" class="en">Home</a></li>
-<li><a href="machinery.html" class="fr">Machinerie</a><a href="machinery.html" class="en">Machinery</a></li>
-<li><a href="crating.html" class="fr">Caissage</a><a href="crating.html" class="en">Crating</a></li>
-<li><a href="transport.html" class="fr">Transport</a><a href="transport.html" class="en">Transport</a></li>
-<li><a href="#contact" class="fr">Contact</a><a href="#contact" class="en">Contact</a></li>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="machinery.html">Machinerie</a></li>
+<li><a href="crating.html">Caissage</a></li>
+<li><a href="transport.html">Transport</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="index-en.html">EN</a></li>
 </ul>
-<div class="lang-switch" onclick="toggleLang()">FR | EN</div>
 </nav>
 
-<section class="hero" id="home">
-<div class="fr">
+<section class="hero">
 <h1>Signature Moving & Crating Canada</h1>
-<p>Protection d'élite et transport de précision</p>
+<p>Protection d'élite et transport de précision à Ottawa & Gatineau</p>
 <a href="#contact" class="btn">Demande de Soumission</a>
-</div>
-<div class="en">
-<h1>Signature Moving & Crating Canada</h1>
-<p>Elite protection and precision transport</p>
-<a href="#contact" class="btn">Request a Quote</a>
-</div>
 </section>
 
-<section class="services" id="services">
-<div class="fr">
-<h2>Nos Services</h2>
-<div class="services-grid">
-<div class="service-card">
-<img src="machinerylaboratorymovers.png" alt="Machinerie & Laboratoire">
-<h3>Machinerie & Laboratoire</h3>
-<p>Déménagement industriel de machinerie et laboratoires.</p>
+<section class="services">
+<div class="card">
+<img src="machinerylaboratorymovers.png" alt="Machinerie">
+<h3>Machinerie</h3>
+<p>Déménagement industriel et usines. Relocalisation sécurisée d'équipements industriels et médicaux.</p>
 <a href="machinery.html" class="btn">En savoir plus</a>
 </div>
-<div class="service-card">
-<img src="customcratingottawa.png" alt="Caissage sur mesure">
-<h3>Caissage sur Mesure</h3>
-<p>Fabrication professionnelle de caisses pour exportation et objets fragiles.</p>
+<div class="card">
+<img src="customcratingottawa.png" alt="Caissage">
+<h3>Caissage</h3>
+<p>Fabrication de caisses sur mesure pour objets fragiles et exportation conforme aux standards internationaux.</p>
 <a href="crating.html" class="btn">En savoir plus</a>
 </div>
-<div class="service-card">
-<img src="fragilehighvaluetransportation.png" alt="Transport d'objets sensibles">
-<h3>Transport d'Objets Sensibles</h3>
-<p>Transport sécurisé de pianos, coffres et équipements de valeur.</p>
+<div class="card">
+<img src="fragilehighvaluetransportation.png" alt="Transport">
+<h3>Transport</h3>
+<p>Transport sécurisé de pianos, coffres et équipements de haute valeur avec assurance complète.</p>
 <a href="transport.html" class="btn">En savoir plus</a>
-</div>
-</div>
-</div>
-<div class="en">
-<h2>Our Services</h2>
-<div class="services-grid">
-<div class="service-card">
-<img src="machinerylaboratorymovers.png" alt="Machinery & Laboratory">
-<h3>Machinery & Laboratory</h3>
-<p>Industrial relocation of machinery and laboratories.</p>
-<a href="machinery.html" class="btn">Learn More</a>
-</div>
-<div class="service-card">
-<img src="customcratingottawa.png" alt="Custom Crating">
-<h3>Custom Crating</h3>
-<p>Professional crates for export and fragile items.</p>
-<a href="crating.html" class="btn">Learn More</a>
-</div>
-<div class="service-card">
-<img src="fragilehighvaluetransportation.png" alt="Sensitive Transportation">
-<h3>Sensitive Transportation</h3>
-<p>Secure transport of pianos, safes and high-value equipment.</p>
-<a href="transport.html" class="btn">Learn More</a>
-</div>
-</div>
 </div>
 </section>
 
 <section class="contact" id="contact">
-<div class="fr">
 <h2>Demande de Soumission</h2>
 <p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
 <form action="https://formspree.io/f/mgonojqp" method="POST">
@@ -153,41 +88,17 @@ footer a{color:#E67E22;text-decoration:none;}
 <textarea name="message" placeholder="Décrivez votre projet" rows="4"></textarea>
 <button type="submit">ENVOYER</button>
 </form>
-</div>
-<div class="en">
-<h2>Request a Quote</h2>
-<p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
-<form action="https://formspree.io/f/mgonojqp" method="POST">
-<input type="text" name="name" placeholder="Name" required>
-<input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Describe your project" rows="4"></textarea>
-<button type="submit">SEND</button>
-</form>
-</div>
 </section>
 
 <footer>
-<p class="fr">Signature Moving & Crating Canada | Ottawa & Gatineau</p>
-<p class="en">Signature Moving & Crating Canada | Ottawa & Gatineau</p>
-<p class="fr">📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
-<p class="en">📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
+<p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
+<p>📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
 </footer>
 
 <a href="tel:16138593343" class="call-button">📞</a>
 
 <script>
-/* Toggle menu mobile */
-function toggleMenu(){
-  var menu=document.getElementById("menu");
-  menu.style.display=(menu.style.display==="flex"?"none":"flex");
-}
-/* Toggle FR/EN */
-function toggleLang(){
-  const fr=document.querySelectorAll('.fr');
-  const en=document.querySelectorAll('.en');
-  fr.forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
-  en.forEach(el=>el.style.display=(el.style.display==='none'?'block':'none'));
-}
+function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
 </script>
 
 </body>
