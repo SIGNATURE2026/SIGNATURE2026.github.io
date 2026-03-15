@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transport - Signature Moving & Crating Canada</title>
-<meta name="description" content="Transport sécurisé d'objets fragiles et précieux.">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<style>
-/* Styles identiques à index.html */
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Spécialisé - Signature Moving & Crating</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:'Roboto',sans-serif;background:#000;color:#fff;line-height:1.6}
+        nav{position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:rgba(0,0,0,.95);z-index:1000}
+        nav .logo img{height:50px}
+        nav ul{list-style:none;display:flex;gap:25px}
+        nav ul li a{color:#fff;text-decoration:none;font-weight:bold}
+        nav ul li a:hover{color:#ff0000}
+        
+        .sub-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('fragilehighvaluetransportation.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content-section { padding: 80px 10%; max-width: 1200px; margin: auto; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        h1 { font-size: 3em; color: #ff0000; }
+        h2 { font-size: 2em; margin-bottom: 20px; border-left: 5px solid #ff0000; padding-left: 15px; }
+        .btn { padding:15px 40px; border:2px solid #ff0000; color:#fff; text-decoration:none; border-radius:50px; font-weight:bold; transition:0.3s; display:inline-block; margin-top: 30px;}
+        .btn:hover { background:#ff0000; }
+        footer { background:#111; text-align:center; padding:30px 5%; margin-top:40px; }
+        @media(max-width:768px) { .grid { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
-<nav id="navbar">
-<div class="logo"><img src="1772619062185.png" alt="Logo"></div>
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-<ul id="menu">
-<li><a href="index.html">Accueil</a></li>
-<li><a href="machinery.html">Machinerie</a></li>
-<li><a href="crating.html">Caissage</a></li>
-<li><a href="transport.html">Transport</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="transport-en.html">EN</a></li>
-</ul>
+
+<nav>
+    <div class="logo"><a href="index.html"><img src="1772619062185.png" alt="Logo"></a></div>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="machinery.html">Machinerie</a></li>
+        <li><a href="crating.html">Caissage</a></li>
+        <li><a href="transport.html" style="color:#ff0000">Transport</a></li>
+    </ul>
 </nav>
 
-<section class="hero" style="background-image:url('fragilehighvaluetransportation.png');">
-<h1>Transport Sécurisé</h1>
-<p>Déplacement sûr de vos biens fragiles, précieux ou sensibles.</p>
-<a href="#contact" class="btn">Demande de Soumission</a>
+<section class="sub-hero">
+    <h1>Transport Fragile & Haute Valeur</h1>
+    <p>Une logistique impeccable pour vos biens les plus précieux.</p>
 </section>
 
-<section class="content">
-<h2>Détails du Service</h2>
-<p>Nous assurons le transport sécurisé et la livraison de vos biens précieux partout en toute sécurité.</p>
-</section>
-
-<section class="contact" id="contact">
-<h2>Contactez-nous</h2>
-<p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
-<form id="contactForm" action="https://formspree.io/f/mgonojqp" method="POST">
-<input type="text" name="nom" placeholder="Nom" required>
-<input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Votre projet" rows="4"></textarea>
-<button type="submit">ENVOYER</button>
-</form>
-<p id="confirmation" style="display:none;color:#ff0000;margin-top:10px;font-weight:bold;">Merci, nous avons reçu votre message !</p>
+<section class="content-section">
+    <div class="grid">
+        <div>
+            <h2>Sécurité sans compromis</h2>
+            <p>Nous nous spécialisons dans le transport d'objets qui demandent plus qu'une simple livraison. Des pianos de concert aux équipements médicaux sensibles, nous assurons une manipulation experte.</p>
+            <p>Notre flotte est équipée pour minimiser les vibrations et garantir que chaque item arrive dans le même état qu'au départ.</p>
+            <a href="index.html#contact" class="btn">Planifier un transport</a>
+        </div>
+        <div>
+            <img src="fragilehighvaluetransportation.png" alt="Transport" style="width:100%; border-radius:15px;">
+        </div>
+    </div>
 </section>
 
 <footer>
-<p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
-<p>📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
+    <p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
 </footer>
 
-<a href="tel:16138593343" class="call-button">📞</a>
-
-<script>
-function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
-window.addEventListener('scroll', function(){document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);});
-const sections=document.querySelectorAll('.hero,.content,.contact');
-const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');}})},{threshold:0.2});
-sections.forEach(section=>observer.observe(section));
-document.getElementById('contactForm').addEventListener('submit', function(e){setTimeout(()=>{document.getElementById('confirmation').style.display='block';},500);});
-</script>
 </body>
 </html>
