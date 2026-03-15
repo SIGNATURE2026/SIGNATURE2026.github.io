@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Signature Moving & Crating Canada</title>
-<meta name="description" content="Protection d'élite et transport de précision à Ottawa et Gatineau.">
-<meta name="keywords" content="déménagement, caissage, transport, Ottawa, Canada">
+<meta name="description" content="Elite protection and precision transportation in Ottawa and Gatineau.">
+<meta name="keywords" content="moving, crating, transport, Ottawa, Canada">
 <meta name="author" content="Signature Moving & Crating Canada">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -17,37 +17,37 @@
   <div class="logo"><img src="1772619062185.png" alt="Logo"></div>
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   <ul id="menu">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="machinery.html">Machinerie</a></li>
-    <li><a href="crating.html">Caissage</a></li>
-    <li><a href="transport.html">Transport</a></li>
+    <li><a href="index-en.html">Home</a></li>
+    <li><a href="machinery-en.html">Machinery</a></li>
+    <li><a href="crating-en.html">Crating</a></li>
+    <li><a href="transport-en.html">Transport</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="index-en.html">EN</a></li>
+    <li><a href="index.html">FR</a></li>
   </ul>
 </nav>
 
 <section class="hero" style="background-image:url('fragilehighvaluetransportation.png');">
 <h1>Signature Moving & Crating Canada</h1>
-<p>Protection d'élite et transport de précision.</p>
-<a href="#contact" class="btn">Soumission</a>
+<p>Elite protection & precision transportation.</p>
+<a href="#contact" class="btn">Request a Quote</a>
 </section>
 
 <section class="content">
-<h2>Nos Services</h2>
-<p>Déménagement industriel, fabrication de caisses sur mesure et transport sécurisé d’objets de grande valeur.</p>
-<p>Nous protégeons vos machines, laboratoires, pianos et œuvres d’art avec des solutions spécialisées.</p>
+<h2>Our Services</h2>
+<p>Industrial relocation, custom crating, and secure transport of high-value items.</p>
+<p>We protect machinery, laboratories, pianos, and artworks with specialized solutions.</p>
 </section>
 
 <section class="contact" id="contact">
-<h2>Contactez-nous</h2>
+<h2>Contact Us</h2>
 <p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
 <form id="contactForm" action="https://formspree.io/f/mgonojqp" method="POST">
-<input type="text" name="nom" placeholder="Nom" required>
+<input type="text" name="name" placeholder="Name" required>
 <input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Votre projet" rows="4"></textarea>
-<button type="submit">ENVOYER</button>
+<textarea name="message" placeholder="Your project" rows="4"></textarea>
+<button type="submit">SEND</button>
 </form>
-<p id="confirmation" style="display:none;color:#ff0000;margin-top:10px;font-weight:bold;">Merci, nous avons reçu votre message !</p>
+<p id="confirmation" style="display:none;color:#ff0000;margin-top:10px;font-weight:bold;">Thank you! We received your message.</p>
 </section>
 
 <footer>
@@ -59,26 +59,9 @@
 
 <script>
 function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
-
-// Navbar background on scroll
-window.addEventListener('scroll', function(){
-  const navbar = document.getElementById('navbar');
-  if(window.scrollY > 50){navbar.classList.add('scrolled');} else {navbar.classList.remove('scrolled');}
-});
-
-// Animate sections on scroll
-const sections = document.querySelectorAll('.hero, .content, .contact');
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){entry.target.classList.add('show');}
-  });
-},{threshold:0.2});
-sections.forEach(section=>observer.observe(section));
-
-// Form confirmation
-document.getElementById('contactForm').addEventListener('submit', function(e){
-  setTimeout(()=>{document.getElementById('confirmation').style.display='block';},500);
-});
+window.addEventListener('scroll', function(){document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);});
+const sections=document.querySelectorAll('.hero,.content,.contact');const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');}})},{threshold:0.2});sections.forEach(section=>observer.observe(section));
+document.getElementById('contactForm').addEventListener('submit', function(e){setTimeout(()=>{document.getElementById('confirmation').style.display='block';},500);});
 </script>
 </body>
 </html>
