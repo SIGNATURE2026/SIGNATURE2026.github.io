@@ -1,21 +1,25 @@
-/ (racine du site)
+signaturemovingcrating/
 │
-├─ index.html                 (Accueil FR)
-├─ index-en.html              (Accueil EN)
+├── index.html                 # Page d'accueil FR
+├── index-en.html              # Page d'accueil EN
+├── machinery.html             # Page Machinerie FR
+├── machinery-en.html          # Page Machinerie EN
+├── crating.html               # Page Caissage FR
+├── crating-en.html            # Page Crating EN
+├── transport.html             # Page Transport FR
+├── transport-en.html          # Page Transport EN
+├── sitemap.xml                # Sitemap SEO
+├── robots.txt                 # Robots.txt
 │
-├─ machinery.html             (Machinerie FR)
-├─ machinery-en.html          (Machinery EN)
+├── assets/
+│   ├── images/
+│   │   ├── 1772619062185.png               # Logo
+│   │   ├── fragilehighvaluetransportation.png
+│   │   ├── machinerylaboratorymovers.png
+│   │   ├── customcratingottawa.png
+│   │   ├── autres images hero si nécessaire
+│   │
+│   └── css/
+│       └── style.css                        # Si tu décides de séparer le CSS
 │
-├─ crating.html               (Caissage FR)
-├─ crating-en.html            (Crating EN)
-│
-├─ transport.html             (Transport FR)
-├─ transport-en.html          (Transport EN)
-│
-├─ 1772619062185.png          (Logo)
-├─ machinerylaboratorymovers.png
-├─ customcratingottawa.png
-├─ fragilehighvaluetransportation.png
-│
-├─ sitemap.xml
-├─ robots.txt
+└── README.md                                 # Optionnel
