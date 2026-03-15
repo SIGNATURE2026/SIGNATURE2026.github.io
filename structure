@@ -1,12 +1,21 @@
-signaturemovingcrating/       ← Dossier racine / dépôt GitHub
+/ (racine du site)
 │
-├─ index.html                ← Page d’accueil
-├─ machinery.html            ← Page Machinerie
-├─ crating.html              ← Page Caissage
-├─ transport.html            ← Page Transport
-├─ style.css                 ← Styles communs pour toutes les pages
-├─ sitemap.xml               ← Sitemap pour Google Search Console
-├─ 1772619062185.png         ← Logo
+├─ index.html                 (Accueil FR)
+├─ index-en.html              (Accueil EN)
+│
+├─ machinery.html             (Machinerie FR)
+├─ machinery-en.html          (Machinery EN)
+│
+├─ crating.html               (Caissage FR)
+├─ crating-en.html            (Crating EN)
+│
+├─ transport.html             (Transport FR)
+├─ transport-en.html          (Transport EN)
+│
+├─ 1772619062185.png          (Logo)
 ├─ machinerylaboratorymovers.png
 ├─ customcratingottawa.png
 ├─ fragilehighvaluetransportation.png
+│
+├─ sitemap.xml
+├─ robots.txt
