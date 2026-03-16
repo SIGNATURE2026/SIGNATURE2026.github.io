@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crating - Signature Moving & Crating Canada</title>
-<meta name="description" content="Custom crating for fragile and valuable items.">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<style>
-/* Styles identiques à index-en.html */
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Crating Services - Signature Moving & Crating</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Shared Styles */
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:'Roboto',sans-serif;background:#000;color:#fff;line-height:1.6}
+        nav{position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:rgba(0,0,0,.95);z-index:1000}
+        nav .logo img{height:50px}
+        nav ul{list-style:none;display:flex;gap:25px}
+        nav ul li a{color:#fff;text-decoration:none;font-weight:bold}
+        nav ul li a:hover{color:#ff0000}
+        .sub-hero {height: 60vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('customcratingottawa.png'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
+        .content-section {padding: 80px 10%; max-width: 1200px; margin: auto;}
+        .grid {display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;}
+        h1 {font-size: 3em; color: #ff0000;}
+        h2 {font-size: 2em; margin-bottom: 20px; border-left: 5px solid #ff0000; padding-left: 15px;}
+        .feature-list {list-style: none; margin-bottom: 30px;}
+        .feature-list li {margin-bottom: 10px; padding-left: 25px; position: relative;}
+        .feature-list li::before {content: '📦'; position: absolute; left: 0;}
+        .btn {padding:15px 40px; border:2px solid #ff0000; color:#fff; text-decoration:none; border-radius:50px; font-weight:bold; transition:0.3s; display:inline-block;}
+        .btn:hover {background:#ff0000;}
+        footer {background:#111; text-align:center; padding:30px 5%; margin-top:40px;}
+        @media(max-width:768px) {.grid {grid-template-columns: 1fr;}}
+    </style>
 </head>
 <body>
-<nav id="navbar">
-<div class="logo"><img src="1772619062185.png" alt="Logo"></div>
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-<ul id="menu">
-<li><a href="index-en.html">Home</a></li>
-<li><a href="machinery-en.html">Machinery</a></li>
-<li><a href="crating-en.html">Crating</a></li>
-<li><a href="transport-en.html">Transport</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="crating.html">FR</a></li>
-</ul>
+<nav>
+    <div class="logo"><a href="index-en.html"><img src="1772619062185.png" alt="Logo"></a></div>
+    <ul>
+        <li><a href="index-en.html">Home</a></li>
+        <li><a href="machinery-en.html">Machinery</a></li>
+        <li><a href="crating-en.html" style="color:#ff0000">Crating</a></li>
+        <li><a href="transport-en.html">Transport</a></li>
+    </ul>
 </nav>
-
-<section class="hero" style="background-image:url('customcratingottawa.png');">
-<h1>Custom Crating</h1>
-<p>We build custom crates to protect your fragile and valuable items.</p>
-<a href="#contact" class="btn">Request a Quote</a>
+<section class="sub-hero">
+    <h1>Custom Crating</h1>
+    <p>Rugged, engineered packing solutions for international export and fragile assets.</p>
 </section>
-
-<section class="content">
-<h2>Service Details</h2>
-<p>Custom crates with maximum protection for transportation and handling of your valuable goods.</p>
+<section class="content-section">
+    <div class="grid">
+        <div>
+            <img src="customcratingottawa.png" alt="Crating" style="width:100%; border-radius:15px;">
+        </div>
+        <div>
+            <h2>Built to Protect</h2>
+            <p>Every item is different. Our custom wooden crates are built using heat-treated wood (ISPM-15) to ensure your goods meet international shipping standards while being protected from the elements.</p>
+            <ul class="feature-list">
+                <li>ISPM-15 certified for global export</li>
+                <li>Custom internal shock-absorption</li>
+                <li>Fine art and antique specialized crating</li>
+                <li>On-site or off-site crating services</li>
+            </ul>
+            <a href="index-en.html#contact" class="btn">Request Custom Crating</a>
+        </div>
+    </div>
 </section>
-
-<section class="contact" id="contact">
-<h2>Contact Us</h2>
-<p>Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
-<form id="contactForm" action="https://formspree.io/f/mgonojqp" method="POST">
-<input type="text" name="name" placeholder="Name" required>
-<input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Your project" rows="4"></textarea>
-<button type="submit">SEND</button>
-</form>
-<p id="confirmation" style="display:none;color:#ff0000;margin-top:10px;font-weight:bold;">Thank you! We received your message.</p>
-</section>
-
-<footer>
-<p>Signature Moving & Crating Canada | Ottawa & Gatineau</p>
-<p>📞 613-859-3343 | Email: <a href="mailto:info@signaturemovingcrating.ca">info@signaturemovingcrating.ca</a></p>
-</footer>
-
-<a href="tel:16138593343" class="call-button">📞</a>
-
-<script>
-function toggleMenu(){var menu=document.getElementById("menu");menu.style.display=(menu.style.display==="flex"?"none":"flex");}
-window.addEventListener('scroll', function(){document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);});
-const sections=document.querySelectorAll('.hero,.content,.contact');
-const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');}})},{threshold:0.2});
-sections.forEach(section=>observer.observe(section));
-document.getElementById('contactForm').addEventListener('submit', function(e){setTimeout(()=>{document.getElementById('confirmation').style.display='block';},500);});
-</script>
+<footer><p>Signature Moving & Crating Canada | Ottawa & Gatineau</p></footer>
 </body>
 </html>
