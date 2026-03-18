@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://signature2026.github.io/index.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://signature2026.github.io/machinery.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://signature2026.github.io/crating.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://signature2026.github.io/transport.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://signature2026.github.io/index-en.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://signature2026.github.io/machinery-en.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://signature2026.github.io/crating-en.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://signature2026.github.io/transport-en.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>
